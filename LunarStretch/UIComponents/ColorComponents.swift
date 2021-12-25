@@ -24,7 +24,7 @@ extension UIColor {
     // If we want to add light vs. dark colors, check the traitCollection passed in and pass a different color.
     
     class func appMain(for traitCollection: UITraitCollection) -> UIColor {
-        return UIColor(hex: 0xdc4548)
+        return UIColor(hex: 0xf7c848)
     }
 
     class func appBackground(for traitCollection: UITraitCollection) -> UIColor {
