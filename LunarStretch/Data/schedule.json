@@ -115,8 +115,12 @@
     },
     {
         "day": 4,
-        "name": "waxing crescent (rest day))",
+        "name": "waxing crescent",
         "stretches": [
+            {
+                "id": "88A19775-0997-4348-B4E8-FF9E38591C1D",
+                "duration: ""
+            }
         ]
     },
     {
@@ -235,8 +239,12 @@
     },
     {
         "day": 8,
-        "name": "first quarter (rest day)",
+        "name": "first quarter",
         "stretches": [
+            {
+                "id": "88A19775-0997-4348-B4E8-FF9E38591C1D",
+                "duration: ""
+            }
         ]
     },
     {
@@ -343,8 +351,12 @@
     },
     {
         "day": 12,
-        "name": "waxing gibbous (rest day)",
+        "name": "waxing gibbous",
         "stretches": [
+            {
+                "id": "88A19775-0997-4348-B4E8-FF9E38591C1D",
+                "duration: ""
+            }
         ]
     },
     {
@@ -463,8 +475,12 @@
     },
     {
         "day": 16,
-        "name": "full moon (rest day)",
+        "name": "full moon",
         "stretches": [
+            {
+                "id": "88A19775-0997-4348-B4E8-FF9E38591C1D",
+                "duration: ""
+            }
         ]
     },
     {
@@ -583,8 +599,12 @@
     },
     {
         "day": 20,
-        "name": "waning gibbous (rest day)",
+        "name": "waning gibbous",
         "stretches": [
+            {
+                "id": "88A19775-0997-4348-B4E8-FF9E38591C1D",
+                "duration: ""
+            }
         ]
     },
     {
@@ -715,8 +735,12 @@
     },
     {
         "day": 24,
-        "name": "third quarter (rest day)",
+        "name": "third quarter",
         "stretches": [
+            {
+                "id": "88A19775-0997-4348-B4E8-FF9E38591C1D",
+                "duration: ""
+            }
         ]
     },
     {
@@ -835,8 +859,12 @@
     },
     {
         "day": 28,
-        "name": "waning crescent (rest day)",
+        "name": "waning crescent",
         "stretches": [
+            {
+                "id": "88A19775-0997-4348-B4E8-FF9E38591C1D",
+                "duration: ""
+            }
         ]
     },
     {

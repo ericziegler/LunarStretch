@@ -7,34 +7,48 @@
 
 import Foundation
 
-// MARK: - TypeAliases
-
-typealias ScheduleCompletionBlock = (_ result: [ScheduleDay]?, _ error: AppError?) -> ()
-
 // MARK: - Services
 
-class ScheudleService {
+class ScheduleService {
     
     // MARK: - Constants
     
-    private let scheduleFileName = "schedule"
-    private let scheduleFileExtension = "json"
+    private static let daysCacheKey = "ScheduleDaysCacheKey"
+    private static let scheduleFileName = "schedule"
+    private static let scheduleFileExtension = "json"
     
     // MARK: - Loading
  
-    func fetchSchedule(completion: ScheduleCompletionBlock?) {
-        guard let data = Services.openFileNamed(name: scheduleFileName, fileExtension: scheduleFileExtension) else {
-            completion?(nil, .fileOpen)
-            return
+    func fetchSchedule() -> [ScheduleDay]? {
+        // attempt to load the cached schedule, if there is one. otherwise, load fresh from a file
+        if let cachedSchedule = loadCachedSchedule() {
+            return cachedSchedule
+        }
+
+        guard let data = Services.openFileNamed(name: ScheduleService.scheduleFileName, fileExtension: ScheduleService.scheduleFileExtension) else {
+            return nil
         }
         
         do {
             let decoder = JSONDecoder()
             let schedule = try decoder.decode([ScheduleDay].self, from: data)
-            completion?(schedule, nil)
+            return schedule
         } catch {
-            completion?(nil, .jsonParsing)
+            return nil
         }
+    }
+    
+    private func loadCachedSchedule() -> [ScheduleDay]? {
+        if let scheduleData = UserDefaults.standard.object(forKey: ScheduleService.daysCacheKey) as? Data, let days = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(scheduleData) as? [ScheduleDay] {
+            return days
+        }
+        return nil
+    }
+    
+    func saveSchedule(schedule: [ScheduleDay]) {
+        let scheduleData = try? NSKeyedArchiver.archivedData(withRootObject: schedule, requiringSecureCoding: false)
+        UserDefaults.standard.set(scheduleData, forKey: ScheduleService.daysCacheKey)
+        UserDefaults.standard.synchronize()
     }
     
 }

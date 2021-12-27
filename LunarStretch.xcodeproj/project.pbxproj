@@ -66,6 +66,7 @@
 		789F45A9277A2DBA00498E6D /* TimePickerCollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F45A8277A2DBA00498E6D /* TimePickerCollectionFlowLayout.swift */; };
 		789F45AB277A30B600498E6D /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F45AA277A30B600498E6D /* TimerViewModel.swift */; };
 		789F45AE277A3E7C00498E6D /* AlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F45AD277A3E7C00498E6D /* AlarmManager.swift */; };
+		789F45B0277A56A500498E6D /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F45AF277A56A500498E6D /* ScheduleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +132,7 @@
 		789F45A8277A2DBA00498E6D /* TimePickerCollectionFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerCollectionFlowLayout.swift; sourceTree = "<group>"; };
 		789F45AA277A30B600498E6D /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		789F45AD277A3E7C00498E6D /* AlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManager.swift; sourceTree = "<group>"; };
+		789F45AF277A56A500498E6D /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
 		AE84A6A639398A319FBA4E56 /* Pods_LunarStretch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunarStretch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -366,6 +368,7 @@
 			children = (
 				789F459D277A213700498E6D /* Schedule.storyboard */,
 				789F459B277A213000498E6D /* ScheduleController.swift */,
+				789F45AF277A56A500498E6D /* ScheduleViewModel.swift */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -536,6 +539,7 @@
 			files = (
 				789F456A27773FF900498E6D /* UIViewExtensions.swift in Sources */,
 				789F456327773FF900498E6D /* UITableViewExtensions.swift in Sources */,
+				789F45B0277A56A500498E6D /* ScheduleViewModel.swift in Sources */,
 				789F4589277A15BD00498E6D /* ScheduleDay.swift in Sources */,
 				789F455C27773FF900498E6D /* UIImageViewComponents.swift in Sources */,
 				789F455E27773FF900498E6D /* ButtonComponents.swift in Sources */,

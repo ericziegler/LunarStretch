@@ -27,6 +27,7 @@ class ScheduleStretch: NSObject, Codable, NSCoding {
     var id: String?
     var duration: String?
     var isCompleted: Bool = false
+    var stretchInfo: StretchInfo?
     
     // MARK: - Init
     
