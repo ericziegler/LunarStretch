@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ScheduleController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
+class ScheduleController: BaseViewController, UITableViewDataSource, UITableViewDelegate, ScheduleCellDelegate {
  
     // MARK: - Properties
     
@@ -34,9 +34,7 @@ class ScheduleController: BaseViewController, UITableViewDataSource, UITableView
     
     private func setupUI() {
         self.title = "SCHEDULE"
-        if #available(iOS 15.0, *) {
-            scheduleTable.sectionHeaderTopPadding = 0
-        }
+        scheduleTable.register(ScheduleHeader.self, forHeaderFooterViewReuseIdentifier: ScheduleHeader.reuseId)
     }
     
     // MARK: - UITableViewDataSource
@@ -56,18 +54,32 @@ class ScheduleController: BaseViewController, UITableViewDataSource, UITableView
         if let stretches = curDay.stretches {
             let curStretch = stretches[indexPath.row]
             cell.layoutFor(stretch: curStretch)
+            cell.delegate = self
         }
         return cell
+    }
+    
+    // MARK: - Helpers
+    
+    private func toggleStretchCompletedAt(indexPath: IndexPath) {
+        let curDay = viewModel.days[indexPath.section]
+        if let stretches = curDay.stretches {
+            let curStretch = stretches[indexPath.row]
+            curStretch.isCompleted = !curStretch.isCompleted
+            viewModel.saveSchedule()
+            scheduleTable.reloadSections(IndexSet(integer: indexPath.section), with: .none)
+            playHaptic()
+        }
     }
     
     // MARK: - UITableViewDelegate
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return ScheduleHeaderCell.standardHeight
+        return ScheduleHeader.standardHeight
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = tableView.dequeueReusableCell(withIdentifier: ScheduleHeaderCell.reuseId) as! ScheduleHeaderCell
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: ScheduleHeader.reuseId) as! ScheduleHeader
         let curDay = viewModel.days[section]
         header.layoutFor(day: curDay)
         return header
@@ -75,6 +87,26 @@ class ScheduleController: BaseViewController, UITableViewDataSource, UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let completeAction = UIContextualAction(style: .normal, title: nil) { [unowned self] (action, view, completionHandler) in
+            self.toggleStretchCompletedAt(indexPath: indexPath)
+        }
+        completeAction.backgroundColor = UIColor.appMain(for: traitCollection)
+        completeAction.image = UIImage(systemName: "checkmark")
+        let configuration = UISwipeActionsConfiguration(actions: [completeAction])
+        configuration.performsFirstActionWithFullSwipe = true
+        return configuration
+    }
+    
+    // MARK: - ScheduleCellDelegate
+    
+    func checkTappedFor(cell: ScheduleCell) {
+        guard let indexPath = scheduleTable.indexPath(for: cell) else {
+            return
+        }
+        toggleStretchCompletedAt(indexPath: indexPath)
     }
     
 }

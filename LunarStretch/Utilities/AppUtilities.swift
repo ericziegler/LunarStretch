@@ -26,6 +26,9 @@ func applyApplicationAppearanceProperties(for traitCollection: UITraitCollection
 //    UISearchBar.appearance().setBackgroundImage(UIImage.from(color: UIColor(hex: 0xf4f4f7)), for: .any, barMetrics: .default)
     UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font : UIFont.appMediumFontOfSize(12)], for: .normal)
     UIView.appearance(whenContainedInInstancesOf: [UIAlertController.self]).tintColor = UIColor.appText(for: traitCollection)
+    if #available(iOS 15.0, *) {
+        UITableView.appearance().sectionHeaderTopPadding = 0
+    }
 }
 
 func navTitleTextAttributes(for traitCollection: UITraitCollection) -> [NSAttributedString.Key : Any] {

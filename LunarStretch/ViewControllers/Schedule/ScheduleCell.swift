@@ -7,6 +7,12 @@
 
 import UIKit
 
+// MARK: - Protocols
+
+protocol ScheduleCellDelegate {
+    func checkTappedFor(cell: ScheduleCell)
+}
+
 class ScheduleCell: UITableViewCell {
  
     // MARK: - Properties
@@ -15,6 +21,9 @@ class ScheduleCell: UITableViewCell {
     
     @IBOutlet var stretchLabel: MediumLabel!
     @IBOutlet var durationLabel: RegularLabel!
+    @IBOutlet var checkButton: RegularButton!
+    
+    var delegate: ScheduleCellDelegate?
     
     // MARK: - Layout
     
@@ -27,6 +36,15 @@ class ScheduleCell: UITableViewCell {
             }
         }
         durationLabel.text = stretch.duration?.capitalized
+        
+        let checkImage = stretch.isCompleted == true ? "Checked" : "Unchecked"
+        checkButton.setImage(UIImage(named: checkImage), for: .normal)
+    }
+    
+    // MARK: - Actions
+    
+    @IBAction func checkTapped(_ sender: AnyObject) {
+        delegate?.checkTappedFor(cell: self)
     }
     
 }

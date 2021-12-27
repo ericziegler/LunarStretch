@@ -56,4 +56,9 @@ class ScheduleViewModel {
         }
     }
     
+    func saveSchedule() {
+        let services = ScheduleService()
+        services.saveSchedule(schedule: days)
+    }
+    
 }

@@ -29,34 +29,8 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ScheduleHeaderCellId" id="OJ7-gr-ZOS" customClass="ScheduleHeaderCell" customModule="LunarStretch" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="51"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OJ7-gr-ZOS" id="FNE-so-mtE">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNk-va-tMU" customClass="MediumLabel" customModule="LunarStretch" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="12" width="57.5" height="27"/>
-                                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="23"/>
-                                                    <color key="textColor" name="AppMainColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" name="AppSeparatorColor"/>
-                                            <constraints>
-                                                <constraint firstItem="aNk-va-tMU" firstAttribute="leading" secondItem="FNE-so-mtE" secondAttribute="leading" constant="16" id="EVw-7J-eRd"/>
-                                                <constraint firstItem="aNk-va-tMU" firstAttribute="top" secondItem="FNE-so-mtE" secondAttribute="top" constant="12" id="ZUu-fT-7hN"/>
-                                                <constraint firstAttribute="bottom" secondItem="aNk-va-tMU" secondAttribute="bottom" constant="12" id="rSe-Mc-q9L"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <connections>
-                                            <outlet property="nameLabel" destination="aNk-va-tMU" id="nV6-gN-VQh"/>
-                                        </connections>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ScheduleCellId" id="NPz-T4-VgI" customClass="ScheduleCell" customModule="LunarStretch" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="95.5" width="414" height="69"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NPz-T4-VgI" id="i1u-9x-gQH">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
@@ -81,13 +55,27 @@
                                                         <constraint firstAttribute="height" constant="0.5" id="wtz-6g-dT4"/>
                                                     </constraints>
                                                 </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3p-EX-zQK" customClass="RegularButton" customModule="LunarStretch" customModuleProvider="target">
+                                                    <rect key="frame" x="368" y="16.5" width="36" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="36" id="bQa-wM-efR"/>
+                                                        <constraint firstAttribute="height" constant="36" id="o6q-Va-Kll"/>
+                                                    </constraints>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="Checked"/>
+                                                    <connections>
+                                                        <action selector="checkTapped:" destination="NPz-T4-VgI" eventType="touchUpInside" id="1jT-sJ-0Dc"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="3zy-AE-DrK" firstAttribute="top" secondItem="zRN-SK-4Yg" secondAttribute="bottom" constant="2" id="7WJ-yQ-NMx"/>
                                                 <constraint firstAttribute="bottom" secondItem="3zy-AE-DrK" secondAttribute="bottom" constant="12" id="Ahb-CA-B8u"/>
                                                 <constraint firstAttribute="trailing" secondItem="IF1-Hi-R87" secondAttribute="trailing" id="Md1-6u-PHJ"/>
+                                                <constraint firstItem="u3p-EX-zQK" firstAttribute="centerY" secondItem="i1u-9x-gQH" secondAttribute="centerY" id="O9v-C9-296"/>
                                                 <constraint firstItem="zRN-SK-4Yg" firstAttribute="leading" secondItem="i1u-9x-gQH" secondAttribute="leading" constant="24" id="TgY-zY-j3v"/>
+                                                <constraint firstAttribute="trailing" secondItem="u3p-EX-zQK" secondAttribute="trailing" constant="10" id="drF-Fh-bGw"/>
                                                 <constraint firstItem="3zy-AE-DrK" firstAttribute="leading" secondItem="zRN-SK-4Yg" secondAttribute="leading" id="nUL-Wt-kNc"/>
                                                 <constraint firstItem="zRN-SK-4Yg" firstAttribute="top" secondItem="i1u-9x-gQH" secondAttribute="top" constant="12" id="rmE-RL-LRu"/>
                                                 <constraint firstItem="IF1-Hi-R87" firstAttribute="leading" secondItem="i1u-9x-gQH" secondAttribute="leading" id="xp1-wJ-hGr"/>
@@ -96,6 +84,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
+                                            <outlet property="checkButton" destination="u3p-EX-zQK" id="1xe-Rq-0Ei"/>
                                             <outlet property="durationLabel" destination="3zy-AE-DrK" id="lrU-f2-Rmh"/>
                                             <outlet property="stretchLabel" destination="zRN-SK-4Yg" id="2xp-k7-zFW"/>
                                         </connections>
@@ -126,11 +115,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Checked" width="22" height="22"/>
         <namedColor name="AppBackgroundColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="AppMainColor">
-            <color red="0.96862745098039216" green="0.78431372549019607" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="AppSeparatorColor">
             <color red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -67,7 +67,7 @@
 		789F45AB277A30B600498E6D /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F45AA277A30B600498E6D /* TimerViewModel.swift */; };
 		789F45AE277A3E7C00498E6D /* AlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F45AD277A3E7C00498E6D /* AlarmManager.swift */; };
 		789F45B0277A56A500498E6D /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F45AF277A56A500498E6D /* ScheduleViewModel.swift */; };
-		789F45B2277A5F0F00498E6D /* ScheduleHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F45B1277A5F0F00498E6D /* ScheduleHeaderCell.swift */; };
+		789F45B2277A5F0F00498E6D /* ScheduleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F45B1277A5F0F00498E6D /* ScheduleHeader.swift */; };
 		789F45B4277A5F2B00498E6D /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F45B3277A5F2B00498E6D /* ScheduleCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -135,7 +135,7 @@
 		789F45AA277A30B600498E6D /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		789F45AD277A3E7C00498E6D /* AlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManager.swift; sourceTree = "<group>"; };
 		789F45AF277A56A500498E6D /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
-		789F45B1277A5F0F00498E6D /* ScheduleHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHeaderCell.swift; sourceTree = "<group>"; };
+		789F45B1277A5F0F00498E6D /* ScheduleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHeader.swift; sourceTree = "<group>"; };
 		789F45B3277A5F2B00498E6D /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
 		AE84A6A639398A319FBA4E56 /* Pods_LunarStretch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunarStretch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -373,7 +373,7 @@
 				789F459D277A213700498E6D /* Schedule.storyboard */,
 				789F459B277A213000498E6D /* ScheduleController.swift */,
 				789F45AF277A56A500498E6D /* ScheduleViewModel.swift */,
-				789F45B1277A5F0F00498E6D /* ScheduleHeaderCell.swift */,
+				789F45B1277A5F0F00498E6D /* ScheduleHeader.swift */,
 				789F45B3277A5F2B00498E6D /* ScheduleCell.swift */,
 			);
 			path = Schedule;
@@ -568,7 +568,7 @@
 				789F457127773FF900498E6D /* IntExtensions.swift in Sources */,
 				789F455A27773FF900498E6D /* TextFieldComponents.swift in Sources */,
 				789F456D27773FF900498E6D /* RangeExtensions.swift in Sources */,
-				789F45B2277A5F0F00498E6D /* ScheduleHeaderCell.swift in Sources */,
+				789F45B2277A5F0F00498E6D /* ScheduleHeader.swift in Sources */,
 				789F45762777402200498E6D /* FileUtilities.swift in Sources */,
 				789F455D27773FF900498E6D /* CellTransitionComponents.swift in Sources */,
 				789F45AE277A3E7C00498E6D /* AlarmManager.swift in Sources */,

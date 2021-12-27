@@ -37,7 +37,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPy-Sb-F9m" customClass="LightLabel" customModule="LunarStretch" customModuleProvider="target">
                                                     <rect key="frame" x="16" y="36" width="64" height="47"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                     <color key="textColor" name="AppTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>

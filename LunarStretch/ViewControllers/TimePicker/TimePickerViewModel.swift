@@ -20,8 +20,6 @@ class TimePickerViewModel {
     
     private func setupDefaultTimes() {
         times.removeAll()
-        // TODO: EZ - Remove
-        times.append(4)
         times.append(15)
         times.append(20)
         times.append(25)
