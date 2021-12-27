@@ -49,6 +49,12 @@
 		789F4580277742AD00498E6D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 789F457C277742AD00498E6D /* Roboto-Regular.ttf */; };
 		789F45842777502000498E6D /* stretches.json in Resources */ = {isa = PBXBuildFile; fileRef = 789F45822777502000498E6D /* stretches.json */; };
 		789F45852777502000498E6D /* schedule.json in Resources */ = {isa = PBXBuildFile; fileRef = 789F45832777502000498E6D /* schedule.json */; };
+		789F4587277A157F00498E6D /* StretchInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F4586277A157F00498E6D /* StretchInfo.swift */; };
+		789F4589277A15BD00498E6D /* ScheduleDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F4588277A15BD00498E6D /* ScheduleDay.swift */; };
+		789F458B277A166600498E6D /* ScheduleStretch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F458A277A166600498E6D /* ScheduleStretch.swift */; };
+		789F458E277A178500498E6D /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F458D277A178500498E6D /* Services.swift */; };
+		789F4590277A17A100498E6D /* ScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F458F277A17A100498E6D /* ScheduleService.swift */; };
+		789F4592277A189C00498E6D /* StrechesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F4591277A189C00498E6D /* StrechesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +103,12 @@
 		789F457C277742AD00498E6D /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		789F45822777502000498E6D /* stretches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stretches.json; sourceTree = "<group>"; };
 		789F45832777502000498E6D /* schedule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schedule.json; sourceTree = "<group>"; };
+		789F4586277A157F00498E6D /* StretchInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchInfo.swift; sourceTree = "<group>"; };
+		789F4588277A15BD00498E6D /* ScheduleDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDay.swift; sourceTree = "<group>"; };
+		789F458A277A166600498E6D /* ScheduleStretch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleStretch.swift; sourceTree = "<group>"; };
+		789F458D277A178500498E6D /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		789F458F277A17A100498E6D /* ScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleService.swift; sourceTree = "<group>"; };
+		789F4591277A189C00498E6D /* StrechesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrechesService.swift; sourceTree = "<group>"; };
 		AE84A6A639398A319FBA4E56 /* Pods_LunarStretch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunarStretch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -144,6 +156,7 @@
 				789F453327773ECF00498E6D /* AppDelegate */,
 				789F453427773F0D00498E6D /* ViewControllers */,
 				789F453B27773FBA00498E6D /* Models */,
+				789F458C277A177900498E6D /* Services */,
 				789F453C27773FCB00498E6D /* Views */,
 				789F453D27773FF900498E6D /* UIComponents */,
 				789F454727773FF900498E6D /* Extensions */,
@@ -204,6 +217,9 @@
 		789F453B27773FBA00498E6D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				789F4586277A157F00498E6D /* StretchInfo.swift */,
+				789F4588277A15BD00498E6D /* ScheduleDay.swift */,
+				789F458A277A166600498E6D /* ScheduleStretch.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -297,6 +313,16 @@
 				789F45822777502000498E6D /* stretches.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		789F458C277A177900498E6D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				789F458D277A178500498E6D /* Services.swift */,
+				789F458F277A17A100498E6D /* ScheduleService.swift */,
+				789F4591277A189C00498E6D /* StrechesService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		841555077786D7EE05786FA7 /* Pods */ = {
@@ -450,6 +476,7 @@
 			files = (
 				789F456A27773FF900498E6D /* UIViewExtensions.swift in Sources */,
 				789F456327773FF900498E6D /* UITableViewExtensions.swift in Sources */,
+				789F4589277A15BD00498E6D /* ScheduleDay.swift in Sources */,
 				789F455C27773FF900498E6D /* UIImageViewComponents.swift in Sources */,
 				789F455E27773FF900498E6D /* ButtonComponents.swift in Sources */,
 				789F456027773FF900498E6D /* UICollectionViewFlowLayoutComponents.swift in Sources */,
@@ -462,14 +489,19 @@
 				789F456227773FF900498E6D /* ColorComponents.swift in Sources */,
 				789F457227773FF900498E6D /* DateExtensions.swift in Sources */,
 				789F456927773FF900498E6D /* UIImageExtensions.swift in Sources */,
+				789F4587277A157F00498E6D /* StretchInfo.swift in Sources */,
+				789F4592277A189C00498E6D /* StrechesService.swift in Sources */,
 				789F457127773FF900498E6D /* IntExtensions.swift in Sources */,
 				789F455A27773FF900498E6D /* TextFieldComponents.swift in Sources */,
 				789F456D27773FF900498E6D /* RangeExtensions.swift in Sources */,
 				789F45762777402200498E6D /* FileUtilities.swift in Sources */,
 				789F455D27773FF900498E6D /* CellTransitionComponents.swift in Sources */,
 				789F456627773FF900498E6D /* UITextViewExtensions.swift in Sources */,
+				789F458B277A166600498E6D /* ScheduleStretch.swift in Sources */,
+				789F4590277A17A100498E6D /* ScheduleService.swift in Sources */,
 				789F456C27773FF900498E6D /* UIColorExtensions.swift in Sources */,
 				789F455B27773FF900498E6D /* TextViewComponents.swift in Sources */,
+				789F458E277A178500498E6D /* Services.swift in Sources */,
 				789F453927773F3900498E6D /* BaseNavigationController.swift in Sources */,
 				789F456727773FF900498E6D /* UICollectionViewLayoutAttributesExtensions.swift in Sources */,
 				789F456527773FF900498E6D /* UICollectionViewExtensions.swift in Sources */,

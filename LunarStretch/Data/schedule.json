@@ -1,890 +1,918 @@
-{
-	"schedule": [
-		{
-			"day": 1,
-			"stretches": [
-				{
-					"id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
-					"duration": "20 sec"
-				},
-				{
-					"id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
-					"duration": "20 sec"
-				},
-				{
-					"id": "F63E5CCC-5054-4883-9C1A-B244BB949875",
-					"duration": "20 sec"
-				},
-				{
-					"id": "BF742888-47FB-492A-8763-9A66E28F5097",
-					"duration": "20 sec"
-				},
-				{
-					"id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
-					"duration": "15 each"
-				},
-				{
-					"id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
-					"duration": "15 each"
-				},
-				{
-					"id": "7A68F629-9665-4355-9F2B-05EE930B6F98",
-					"duration": "3 sets of 15 sec"
-				},
-				{
-					"id": "5AD2292B-784A-42C1-A49A-C8FA5F045D9C",
-					"duration": "3 sets of 15 sec"
-				}														
-			]
-		},
-		{
-			"day": 2,
-			"stretches": [
-				{
-					"id": "7CF935E0-6504-4F44-A520-2B8A86C25BE6",
-					"duration": "20 sec"
-				},
-				{
-					"id": "37A66116-9304-4C9D-A618-9C853827E50F",
-					"duration": "20 sec"
-				},
-				{
-					"id": "B4E2901B-5A48-4592-BED7-5407968D8DE8",
-					"duration": "20 sec"
-				},
-				{
-					"id": "BF742888-47FB-492A-8763-9A66E28F5097",
-					"duration": "20 sec"
-				},
-				{
-					"id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
-					"duration": "15 each"
-				},
-				{
-					"id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
-					"duration": "15 each"
-				},
-				{
-					"id": "E9A8537C-5DD4-414A-8BC8-C21EFFF7CD65",
-					"duration": "3 sets of 10 (3 sec out, 3 sec back)"
-				},
-				{
-					"id": "03B4A600-72C7-4D81-A4D1-C1D8C9CDB0CB",
-					"duration": "3 sets of 10 (3 sec out, 3 sec back)"
-				}															
-			]
-		},
-		{
-			"day": 3,
-			"stretches": [
-				{
-					"id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
-					"duration": "20 sec"
-				},
-				{
-					"id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
-					"duration": "20 sec"
-				},
-				{
-					"id": "422C0A5C-E1E6-492E-9CD3-36F27426CE77",
-					"duration": "30 sec"
-				},
-				{
-					"id": "5F83AF21-7810-4CD0-83A7-1735EE8F5FB7",
-					"duration": "30 sec"
-				},
-				{
-					"id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
-					"duration": "15 each"
-				},
-				{
-					"id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
-					"duration": "15 each"
-				},
-				{
-					"id": "22DC0AF4-0762-4CD4-BCEF-1F61CDEA0D10",
-					"duration": "3 sets of 10"
-				},
-				{
-					"id": "FDE18933-B044-4FE6-9EF7-AB0E05B9399C",
-					"duration": "3 sets of 10"
-				}															
-			]
-		},
-		{
-			"day": 4,
-			"stretches": [																
-			]
-		},	
-		{
-			"day": 5,
-			"stretches": [
-				{
-					"id": "50382D1D-9F5A-4F75-8D02-7783F38E1A40",
-					"duration": "20 sec"
-				},
-				{
-					"id": "6CC25D04-1D00-4019-B6DA-A7B5DDEA34CE",
-					"duration": "20 sec"
-				},
-				{
-					"id": "422C0A5C-E1E6-492E-9CD3-36F27426CE77",
-					"duration": "20 sec"
-				},
-				{
-					"id": "94859A83-1B35-4ABB-9106-B008476A4BD1",
-					"duration": "15 each"
-				},
-				{
-					"id": "31E9AAE2-E039-4446-8777-31319D297D51",
-					"duration": "15 each"
-				},
-				{
-					"id": "FDB39738-DAF9-4A74-90A3-CD9405B3907A",
-					"duration": "3 sets of 10"
-				},
-				{
-					"id": "D43D7FF8-5B6F-402B-856B-49B05BD4C5A5",
-					"duration": "3 sets of 10"
-				},
-				{
-					"id": "BF742888-47FB-492A-8763-9A66E28F5097",
-					"duration": "20 sec"
-				}																
-			]
-		},
-		{
-			"day": 6,
-			"stretches": [
-				{
-					"id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
-					"duration": "20 sec"
-				},
-				{
-					"id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
-					"duration": "20 sec"
-				},
-				{
-					"id": "BF742888-47FB-492A-8763-9A66E28F5097",
-					"duration": "20 sec"
-				},
-				{
-					"id": "50382D1D-9F5A-4F75-8D02-7783F38E1A40",
-					"duration": "20 sec"
-				},
-				{
-					"id": "B984D6E5-CC32-4438-82C1-891B20131212",
-					"duration": "3 sets of 10"
-				},
-				{
-					"id": "1FDA1BCC-8C85-42F4-BF4E-CDDA684F3C76",
-					"duration": "3 sets of 10"
-				},
-				{
-					"id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
-					"duration": "15 each"
-				},
-				{
-					"id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
-					"duration": "15 each"
-				}															
-			]
-		},
-		{
-			"day": 7,
-			"stretches": [
-				{
-					"id": "AF9FA161-26C5-46CA-956F-1D26CFBB21AB",
-					"duration": "20 sec"
-				},
-				{
-					"id": "6FE060C8-199F-48F4-91DC-B3D39DE093B1",
-					"duration": "20 sec"
-				},
-				{
-					"id": "37A66116-9304-4C9D-A618-9C853827E50F",
-					"duration": "20 sec"
-				},
-				{
-					"id": "E9A8537C-5DD4-414A-8BC8-C21EFFF7CD65",
-					"duration": "3 sets of 10"
-				},
-				{
-					"id": "03B4A600-72C7-4D81-A4D1-C1D8C9CDB0CB",
-					"duration": "3 sets of 10"
-				},
-				{
-					"id": "BF742888-47FB-492A-8763-9A66E28F5097",
-					"duration": "20 sec"
-				},
-				{
-					"id": "50382D1D-9F5A-4F75-8D02-7783F38E1A40",
-					"duration": "20 sec"
-				},
-				{
-					"id": "8A3053C4-9033-41AF-A3CB-381CEF341709",
-					"duration": "15 each"
-				}																
-			]
-		},
-		{
-			"day": 8,
-			"stretches": [															
-			]
-		},
-		{
-			"day": 9,
-			"stretches": [
-				{
-					"id": "1094E43B-95A7-4A87-AE32-550A936A7478",
-					"duration": "20 sec"
-				},
-				{
-					"id": "2E276DC6-E5FD-49B0-849B-CA6E652F1809",
-					"duration": "20 sec"
-				},
-				{
-					"id": "94859A83-1B35-4ABB-9106-B008476A4BD1",
-					"duration": "20 each"
-				},
-				{
-					"id": "31E9AAE2-E039-4446-8777-31319D297D51",
-					"duration": "20 each"
-				},
-				{
-					"id": "22DC0AF4-0762-4CD4-BCEF-1F61CDEA0D10",
-					"duration": "15, 15, 10 each"
-				},
-				{
-					"id": "FDE18933-B044-4FE6-9EF7-AB0E05B9399C",
-					"duration": "15, 15, 10 each"
-				}															
-			]
-		},	
-		{
-			"day": 10,
-			"stretches": [
-				{
-					"id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
-					"duration": "20 sec"
-				},
-				{
-					"id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
-					"duration": "20 sec"
-				},
-				{
-					"id": "F63E5CCC-5054-4883-9C1A-B244BB949875",
-					"duration": "20 sec"
-				},
-				{
-					"id": "B4E2901B-5A48-4592-BED7-5407968D8DE8",
-					"duration": "20 sec"
-				},
-				{
-					"id": "BF742888-47FB-492A-8763-9A66E28F5097",
-					"duration": "20 sec"
-				},
-				{
-					"id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
-					"duration": "30 each"
-				},
-				{
-					"id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
-					"duration": "30 each"
-				},
-				{
-					"id": "BF742888-47FB-492A-8763-9A66E28F5097",
-					"duration": "20 sec"
-				}															
-			]
-		},
-		{
-			"day": 11,
-			"stretches": [
-				{
-					"id": "50382D1D-9F5A-4F75-8D02-7783F38E1A40",
-					"duration": "20 sec"
-				},
-				{
-					"id": "422C0A5C-E1E6-492E-9CD3-36F27426CE77",
-					"duration": "30 sec"
-				},
-				{
-					"id": "5F83AF21-7810-4CD0-83A7-1735EE8F5FB7",
-					"duration": "30 sec"
-				},
-				{
-					"id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
-					"duration": "10 each"
-				},
-				{
-					"id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
-					"duration": "10 each"
-				},
-				{
-					"id": "B6407BB2-8B58-4D78-8EDE-5042C2E1975D",
-					"duration": "3 sets to exhaustion"
-				},
-				{
-					"id": "3E954C25-908A-450D-A78B-CF78ED0147D4",
-					"duration": "3 sets to exhaustion"
-				}															
-			]
-		},
-		{
-			"day": 12,
-			"stretches": [															
-			]
-		},
-		{
-			"day": 13,
-			"stretches": [
-				{
-					"id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
-					"duration": "20 sec"
-				},
-				{
-					"id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
-					"duration": "20 sec"
-				},
-				{
-					"id": "BF742888-47FB-492A-8763-9A66E28F5097",
-					"duration": "30 sec"
-				},
-				{
-					"id": "50382D1D-9F5A-4F75-8D02-7783F38E1A40",
-					"duration": "20 sec"
-				},
-				{
-					"id": "31E9AAE2-E039-4446-8777-31319D297D51",
-					"duration": "20 each"
-				},
-				{
-					"id": "94859A83-1B35-4ABB-9106-B008476A4BD1",
-					"duration": "20 each"
-				},
-				{
-					"id": "FDB39738-DAF9-4A74-90A3-CD9405B3907A",
-					"duration": "3 sets of 10"
-				},
-				{
-					"id": "D43D7FF8-5B6F-402B-856B-49B05BD4C5A5",
-					"duration": "3 sets of 10"
-				}															
-			]
-		},
-		{
-			"day": 14,
-			"stretches": [
-				{
-					"id": "B4E2901B-5A48-4592-BED7-5407968D8DE8",
-					"duration": "20 sec"
-				},
-				{
-					"id": "F63E5CCC-5054-4883-9C1A-B244BB949875",
-					"duration": "20 sec"
-				},
-				{
-					"id": "BF742888-47FB-492A-8763-9A66E28F5097",
-					"duration": "30 sec"
-				},
-				{
-					"id": "5F83AF21-7810-4CD0-83A7-1735EE8F5FB7",
-					"duration": "30 sec"
-				},
-				{
-					"id": "C7558169-D91B-4C8E-B056-1BC95E914083",
-					"duration": "30 sec"
-				},
-				{
-					"id": "6FE060C8-199F-48F4-91DC-B3D39DE093B1",
-					"duration": "20 sec"
-				},
-				{
-					"id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
-					"duration": "20 each"
-				},
-				{
-					"id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
-					"duration": "20 each"
-				}															
-			]
-		},	
-		{
-			"day": 15,
-			"stretches": [
-				{
-					"id": "2E276DC6-E5FD-49B0-849B-CA6E652F1809",
-					"duration": "20 sec"
-				},
-				{
-					"id": "F63E5CCC-5054-4883-9C1A-B244BB949875",
-					"duration": "20 sec"
-				},
-				{
-					"id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
-					"duration": "20 sec"
-				},
-				{
-					"id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
-					"duration": "20 sec"
-				},
-				{
-					"id": "BF742888-47FB-492A-8763-9A66E28F5097",
-					"duration": "30 sec"
-				},
-				{
-					"id": "50382D1D-9F5A-4F75-8D02-7783F38E1A40",
-					"duration": "20 sec"
-				},
-				{
-					"id": "B984D6E5-CC32-4438-82C1-891B20131212",
-					"duration": "3 sets to exhaustion"
-				},
-				{
-					"id": "1FDA1BCC-8C85-42F4-BF4E-CDDA684F3C76",
-					"duration": "3 sets to exhaustion"
-				}															
-			]
-		},
-		{
-			"day": 16,
-			"stretches": [															
-			]
-		},
-		{
-			"day": 17,
-			"stretches": [
-				{
-					"id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
-					"duration": "20 sec"
-				},
-				{
-					"id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
-					"duration": "20 sec"
-				},
-				{
-					"id": "AF9FA161-26C5-46CA-956F-1D26CFBB21AB",
-					"duration": "30 sec"
-				},
-				{
-					"id": "422C0A5C-E1E6-492E-9CD3-36F27426CE77",
-					"duration": "20 sec"
-				},
-				{
-					"id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
-					"duration": "15 each"
-				},
-				{
-					"id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
-					"duration": "15 each"
-				},
-				{
-					"id": "E9A8537C-5DD4-414A-8BC8-C21EFFF7CD65",
-					"duration": "3 sets of 10 (5 secs out, 5 secs back)"
-				},
-				{
-					"id": "03B4A600-72C7-4D81-A4D1-C1D8C9CDB0CB",
-					"duration": "3 sets of 10 (5 secs out, 5 secs back)"
-				}															
-			]
-		},
-		{
-			"day": 18,
-			"stretches": [
-				{
-					"id": "F63E5CCC-5054-4883-9C1A-B244BB949875",
-					"duration": "20 sec"
-				},
-				{
-					"id": "7CF935E0-6504-4F44-A520-2B8A86C25BE6",
-					"duration": "20 sec"
-				},
-				{
-					"id": "37A66116-9304-4C9D-A618-9C853827E50F",
-					"duration": "30 sec"
-				},
-				{
-					"id": "BF742888-47FB-492A-8763-9A66E28F5097",
-					"duration": "30 sec"
-				},
-				{
-					"id": "C7558169-D91B-4C8E-B056-1BC95E914083",
-					"duration": "20 sec"
-				},
-				{
-					"id": "422C0A5C-E1E6-492E-9CD3-36F27426CE77",
-					"duration": "30 sec"
-				},
-				{
-					"id": "5F83AF21-7810-4CD0-83A7-1735EE8F5FB7",
-					"duration": "30 sec"
-				},
-				{
-					"id": "50382D1D-9F5A-4F75-8D02-7783F38E1A40",
-					"duration": "20 sec"
-				},
-				{
-					"id": "94859A83-1B35-4ABB-9106-B008476A4BD1",
-					"duration": "20 each"
-				},
-				{
-					"id": "31E9AAE2-E039-4446-8777-31319D297D51",
-					"duration": "20 each"
-				}																
-			]
-		},
-		{
-			"day": 19,
-			"stretches": [
-				{
-					"id": "1094E43B-95A7-4A87-AE32-550A936A7478",
-					"duration": "20 sec"
-				},
-				{
-					"id": "8A3053C4-9033-41AF-A3CB-381CEF341709",
-					"duration": "15 each"
-				},
-				{
-					"id": "E9A8537C-5DD4-414A-8BC8-C21EFFF7CD65",
-					"duration": "3 sets of 10 (5 secs out, 5 secs back)"
-				},
-				{
-					"id": "03B4A600-72C7-4D81-A4D1-C1D8C9CDB0CB",
-					"duration": "3 sets of 10 (5 secs out, 5 secs back)"
-				},
-				{
-					"id": "B6407BB2-8B58-4D78-8EDE-5042C2E1975D",
-					"duration": "3 sets to exhaustion"
-				},
-				{
-					"id": "3E954C25-908A-450D-A78B-CF78ED0147D4",
-					"duration": "3 sets to exhaustion"
-				}																
-			]
-		},	
-		{
-			"day": 20,
-			"stretches": [															
-			]
-		},
-		{
-			"day": 21,
-			"stretches": [
-				{
-					"id": "1A0DC942-D1A8-49C5-8AF1-70F0BB404EA5",
-					"duration": "20 sec"
-				},
-				{
-					"id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
-					"duration": "20 sec"
-				},
-				{
-					"id": "F63E5CCC-5054-4883-9C1A-B244BB949875",
-					"duration": "20 sec"
-				},
-				{
-					"id": "B4E2901B-5A48-4592-BED7-5407968D8DE8",
-					"duration": "20 sec"
-				},
-				{
-					"id": "BF742888-47FB-492A-8763-9A66E28F5097",
-					"duration": "30 sec"
-				},
-				{
-					"id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
-					"duration": "20 each"
-				},
-				{
-					"id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
-					"duration": "20 each"
-				},
-				{
-					"id": "B984D6E5-CC32-4438-82C1-891B20131212",
-					"duration": "20, 15, 10 each"
-				},
-				{
-					"id": "1FDA1BCC-8C85-42F4-BF4E-CDDA684F3C76",
-					"duration": "20, 15, 10 each"
-				}																
-			]
-		},
-		{
-			"day": 22,
-			"stretches": [
-				{
-					"id": "1A0DC942-D1A8-49C5-8AF1-70F0BB404EA5",
-					"duration": "20 sec"
-				},
-				{
-					"id": "6FE060C8-199F-48F4-91DC-B3D39DE093B1",
-					"duration": "20 sec"
-				},
-				{
-					"id": "7CF935E0-6504-4F44-A520-2B8A86C25BE6",
-					"duration": "20 sec"
-				},
-				{
-					"id": "37A66116-9304-4C9D-A618-9C853827E50F",
-					"duration": "30 sec"
-				},
-				{
-					"id": "BF742888-47FB-492A-8763-9A66E28F5097",
-					"duration": "30 sec"
-				},
-				{
-					"id": "31E9AAE2-E039-4446-8777-31319D297D51",
-					"duration": "30 each"
-				},
-				{
-					"id": "8B28D52B-43E0-4614-9D0B-0703764D025C",
-					"duration": "30 each"
-				},
-				{
-					"id": "422C0A5C-E1E6-492E-9CD3-36F27426CE77",
-					"duration": "30 sec"
-				}															
-			]
-		},
-		{
-			"day": 23,
-			"stretches": [
-				{
-					"id": "",
-					"duration": ""
-				},
-				{
-					"id": "AF9FA161-26C5-46CA-956F-1D26CFBB21AB",
-					"duration": "20 sec"
-				},
-				{
-					"id": "2E276DC6-E5FD-49B0-849B-CA6E652F1809",
-					"duration": "20 sec"
-				},
-				{
-					"id": "B4E2901B-5A48-4592-BED7-5407968D8DE8",
-					"duration": "20 sec"
-				},
-				{
-					"id": "8A3053C4-9033-41AF-A3CB-381CEF341709",
-					"duration": "15 each"
-				},
-				{
-					"id": "E9A8537C-5DD4-414A-8BC8-C21EFFF7CD65",
-					"duration": "3 sets of 10 (5 secs out, 5 secs back)"
-				},
-				{
-					"id": "99E700F7-A41F-4DD4-AEED-DA64ACD6AF54",
-					"duration": "3 sets of 10 (5 secs out, 5 secs back)"
-				},
-				{
-					"id": "03B4A600-72C7-4D81-A4D1-C1D8C9CDB0CB",
-					"duration": "3 sets of 10 (5 secs out, 5 secs back)"
-				},
-				{
-					"id": "B6407BB2-8B58-4D78-8EDE-5042C2E1975D",
-					"duration": "3 sets to exhaustion"
-				},
-				{
-					"id": "3E954C25-908A-450D-A78B-CF78ED0147D4",
-					"duration": "3 sets to exhaustion"
-				}																
-			]
-		},
-		{
-			"day": 24,
-			"stretches": [																
-			]
-		},	
-		{
-			"day": 25,
-			"stretches": [
-				{
-					"id": "1094E43B-95A7-4A87-AE32-550A936A7478",
-					"duration": "30 sec"
-				},
-				{
-					"id": "2E276DC6-E5FD-49B0-849B-CA6E652F1809",
-					"duration": "20 sec"
-				},
-				{
-					"id": "94859A83-1B35-4ABB-9106-B008476A4BD1",
-					"duration": "20 each"
-				},
-				{
-					"id": "31E9AAE2-E039-4446-8777-31319D297D51",
-					"duration": "20 each"
-				},
-				{
-					"id": "22DC0AF4-0762-4CD4-BCEF-1F61CDEA0D10",
-					"duration": "20, 15, 10 each"
-				},
-				{
-					"id": "FDE18933-B044-4FE6-9EF7-AB0E05B9399C",
-					"duration": "20, 15, 10 each"
-				}																
-			]
-		},
-		{
-			"day": 26,
-			"stretches": [
-				{
-					"id": "B4E2901B-5A48-4592-BED7-5407968D8DE8",
-					"duration": "20 sec"
-				},
-				{
-					"id": "F63E5CCC-5054-4883-9C1A-B244BB949875",
-					"duration": "20 sec"
-				},
-				{
-					"id": "BF742888-47FB-492A-8763-9A66E28F5097",
-					"duration": "30 sec"
-				},
-				{
-					"id": "422C0A5C-E1E6-492E-9CD3-36F27426CE77",
-					"duration": "30 sec"
-				},
-				{
-					"id": "5F83AF21-7810-4CD0-83A7-1735EE8F5FB7",
-					"duration": "30 sec"
-				},
-				{
-					"id": "C7558169-D91B-4C8E-B056-1BC95E914083",
-					"duration": "20 sec"
-				},
-				{
-					"id": "6FE060C8-199F-48F4-91DC-B3D39DE093B1",
-					"duration": "20 sec"
-				},
-				{
-					"id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
-					"duration": "30 each"
-				},
-				{
-					"id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
-					"duration": "30 each"
-				}																
-			]
-		},
-		{
-			"day": 27,
-			"stretches": [
-				{
-					"id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
-					"duration": "20 sec"
-				},
-				{
-					"id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
-					"duration": "20 sec"
-				},
-				{
-					"id": "AF9FA161-26C5-46CA-956F-1D26CFBB21AB",
-					"duration": "20 sec"
-				},
-				{
-					"id": "BF742888-47FB-492A-8763-9A66E28F5097",
-					"duration": "30 sec"
-				},
-				{
-					"id": "50382D1D-9F5A-4F75-8D02-7783F38E1A40",
-					"duration": "20 sec"
-				},
-				{
-					"id": "94859A83-1B35-4ABB-9106-B008476A4BD1",
-					"duration": "20 each"
-				},
-				{
-					"id": "8B28D52B-43E0-4614-9D0B-0703764D025C",
-					"duration": "20 each"
-				},
-				{
-					"id": "B984D6E5-CC32-4438-82C1-891B20131212",
-					"duration": "4 sets to exhaustion"
-				},
-				{
-					"id": "1FDA1BCC-8C85-42F4-BF4E-CDDA684F3C76",
-					"duration": "4 sets to exhaustion"
-				}																
-			]
-		},
-		{
-			"day": 28,
-			"stretches": [																
-			]
-		},
-		{
-			"day": 29,
-			"stretches": [
-				{
-					"id": "1094E43B-95A7-4A87-AE32-550A936A7478",
-					"duration": "30 sec"
-				},
-				{
-					"id": "2E276DC6-E5FD-49B0-849B-CA6E652F1809",
-					"duration": "20 sec"
-				},
-				{
-					"id": "422C0A5C-E1E6-492E-9CD3-36F27426CE77",
-					"duration": "30 sec"
-				},
-				{
-					"id": "C7558169-D91B-4C8E-B056-1BC95E914083",
-					"duration": "20 sec"
-				},
-				{
-					"id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
-					"duration": "20 each"
-				},
-				{
-					"id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
-					"duration": "20 each"
-				},
-				{
-					"id": "FDB39738-DAF9-4A74-90A3-CD9405B3907A",
-					"duration": "3 sets of 15"
-				},
-				{
-					"id": "D43D7FF8-5B6F-402B-856B-49B05BD4C5A5",
-					"duration": "3 sets of 15"
-				}															
-			]
-		},	
-		{
-			"day": 30,
-			"stretches": [
-				{
-					"id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
-					"duration": "20 sec"
-				},
-				{
-					"id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
-					"duration": "20 sec"
-				},
-				{
-					"id": "F63E5CCC-5054-4883-9C1A-B244BB949875",
-					"duration": "20 sec"
-				},
-				{
-					"id": "BF742888-47FB-492A-8763-9A66E28F5097",
-					"duration": "30 sec"
-				},
-				{
-					"id": "31E9AAE2-E039-4446-8777-31319D297D51",
-					"duration": "40 each"
-				},
-				{
-					"id": "8B28D52B-43E0-4614-9D0B-0703764D025C",
-					"duration": "40 each"
-				},
-				{
-					"id": "422C0A5C-E1E6-492E-9CD3-36F27426CE77",
-					"duration": "30 sec"
-				},
-				{
-					"id": "C7558169-D91B-4C8E-B056-1BC95E914083",
-					"duration": "30 sec"
-				}																
-			]
-		}													
-	]
-}
+[
+    {
+        "day": 1,
+        "name": "new moon pt. 1",
+        "stretches": [
+            {
+                "id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
+                "duration": "20 sec"
+            },
+            {
+                "id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
+                "duration": "20 sec"
+            },
+            {
+                "id": "F63E5CCC-5054-4883-9C1A-B244BB949875",
+                "duration": "20 sec"
+            },
+            {
+                "id": "BF742888-47FB-492A-8763-9A66E28F5097",
+                "duration": "20 sec"
+            },
+            {
+                "id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
+                "duration": "15 each"
+            },
+            {
+                "id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
+                "duration": "15 each"
+            },
+            {
+                "id": "7A68F629-9665-4355-9F2B-05EE930B6F98",
+                "duration": "3 sets of 15 sec"
+            },
+            {
+                "id": "5AD2292B-784A-42C1-A49A-C8FA5F045D9C",
+                "duration": "3 sets of 15 sec"
+            }
+        ]
+    },
+    {
+        "day": 2,
+        "name": "new moon pt. 2",
+        "stretches": [
+            {
+                "id": "7CF935E0-6504-4F44-A520-2B8A86C25BE6",
+                "duration": "20 sec"
+            },
+            {
+                "id": "37A66116-9304-4C9D-A618-9C853827E50F",
+                "duration": "20 sec"
+            },
+            {
+                "id": "B4E2901B-5A48-4592-BED7-5407968D8DE8",
+                "duration": "20 sec"
+            },
+            {
+                "id": "BF742888-47FB-492A-8763-9A66E28F5097",
+                "duration": "20 sec"
+            },
+            {
+                "id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
+                "duration": "15 each"
+            },
+            {
+                "id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
+                "duration": "15 each"
+            },
+            {
+                "id": "E9A8537C-5DD4-414A-8BC8-C21EFFF7CD65",
+                "duration": "3 sets of 10 (3 sec out, 3 sec back)"
+            },
+            {
+                "id": "03B4A600-72C7-4D81-A4D1-C1D8C9CDB0CB",
+                "duration": "3 sets of 10 (3 sec out, 3 sec back)"
+            }
+        ]
+    },
+    {
+        "day": 3,
+        "name": "new moon pt. 3",
+        "stretches": [
+            {
+                "id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
+                "duration": "20 sec"
+            },
+            {
+                "id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
+                "duration": "20 sec"
+            },
+            {
+                "id": "422C0A5C-E1E6-492E-9CD3-36F27426CE77",
+                "duration": "30 sec"
+            },
+            {
+                "id": "5F83AF21-7810-4CD0-83A7-1735EE8F5FB7",
+                "duration": "30 sec"
+            },
+            {
+                "id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
+                "duration": "15 each"
+            },
+            {
+                "id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
+                "duration": "15 each"
+            },
+            {
+                "id": "22DC0AF4-0762-4CD4-BCEF-1F61CDEA0D10",
+                "duration": "3 sets of 10"
+            },
+            {
+                "id": "FDE18933-B044-4FE6-9EF7-AB0E05B9399C",
+                "duration": "3 sets of 10"
+            }
+        ]
+    },
+    {
+        "day": 4,
+        "name": "waxing crescent (rest day))",
+        "stretches": [
+        ]
+    },
+    {
+        "day": 5,
+        "name": "waxing crescent pt. 1",
+        "stretches": [
+            {
+                "id": "50382D1D-9F5A-4F75-8D02-7783F38E1A40",
+                "duration": "20 sec"
+            },
+            {
+                "id": "6CC25D04-1D00-4019-B6DA-A7B5DDEA34CE",
+                "duration": "20 sec"
+            },
+            {
+                "id": "422C0A5C-E1E6-492E-9CD3-36F27426CE77",
+                "duration": "20 sec"
+            },
+            {
+                "id": "94859A83-1B35-4ABB-9106-B008476A4BD1",
+                "duration": "15 each"
+            },
+            {
+                "id": "31E9AAE2-E039-4446-8777-31319D297D51",
+                "duration": "15 each"
+            },
+            {
+                "id": "FDB39738-DAF9-4A74-90A3-CD9405B3907A",
+                "duration": "3 sets of 10"
+            },
+            {
+                "id": "D43D7FF8-5B6F-402B-856B-49B05BD4C5A5",
+                "duration": "3 sets of 10"
+            },
+            {
+                "id": "BF742888-47FB-492A-8763-9A66E28F5097",
+                "duration": "20 sec"
+            }
+        ]
+    },
+    {
+        "day": 6,
+        "name": "waxing crescent pt. 2",
+        "stretches": [
+            {
+                "id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
+                "duration": "20 sec"
+            },
+            {
+                "id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
+                "duration": "20 sec"
+            },
+            {
+                "id": "BF742888-47FB-492A-8763-9A66E28F5097",
+                "duration": "20 sec"
+            },
+            {
+                "id": "50382D1D-9F5A-4F75-8D02-7783F38E1A40",
+                "duration": "20 sec"
+            },
+            {
+                "id": "B984D6E5-CC32-4438-82C1-891B20131212",
+                "duration": "3 sets of 10"
+            },
+            {
+                "id": "1FDA1BCC-8C85-42F4-BF4E-CDDA684F3C76",
+                "duration": "3 sets of 10"
+            },
+            {
+                "id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
+                "duration": "15 each"
+            },
+            {
+                "id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
+                "duration": "15 each"
+            }
+        ]
+    },
+    {
+        "day": 7,
+        "name": "waxing crescent pt. 3",
+        "stretches": [
+            {
+                "id": "AF9FA161-26C5-46CA-956F-1D26CFBB21AB",
+                "duration": "20 sec"
+            },
+            {
+                "id": "6FE060C8-199F-48F4-91DC-B3D39DE093B1",
+                "duration": "20 sec"
+            },
+            {
+                "id": "37A66116-9304-4C9D-A618-9C853827E50F",
+                "duration": "20 sec"
+            },
+            {
+                "id": "E9A8537C-5DD4-414A-8BC8-C21EFFF7CD65",
+                "duration": "3 sets of 10"
+            },
+            {
+                "id": "03B4A600-72C7-4D81-A4D1-C1D8C9CDB0CB",
+                "duration": "3 sets of 10"
+            },
+            {
+                "id": "BF742888-47FB-492A-8763-9A66E28F5097",
+                "duration": "20 sec"
+            },
+            {
+                "id": "50382D1D-9F5A-4F75-8D02-7783F38E1A40",
+                "duration": "20 sec"
+            },
+            {
+                "id": "8A3053C4-9033-41AF-A3CB-381CEF341709",
+                "duration": "15 each"
+            }
+        ]
+    },
+    {
+        "day": 8,
+        "name": "first quarter (rest day)",
+        "stretches": [
+        ]
+    },
+    {
+        "day": 9,
+        "name": "first quarter pt. 1",
+        "stretches": [
+            {
+                "id": "1094E43B-95A7-4A87-AE32-550A936A7478",
+                "duration": "20 sec"
+            },
+            {
+                "id": "2E276DC6-E5FD-49B0-849B-CA6E652F1809",
+                "duration": "20 sec"
+            },
+            {
+                "id": "94859A83-1B35-4ABB-9106-B008476A4BD1",
+                "duration": "20 each"
+            },
+            {
+                "id": "31E9AAE2-E039-4446-8777-31319D297D51",
+                "duration": "20 each"
+            },
+            {
+                "id": "22DC0AF4-0762-4CD4-BCEF-1F61CDEA0D10",
+                "duration": "15, 15, 10 each"
+            },
+            {
+                "id": "FDE18933-B044-4FE6-9EF7-AB0E05B9399C",
+                "duration": "15, 15, 10 each"
+            }
+        ]
+    },
+    {
+        "day": 10,
+        "name": "first quarter pt. 2",
+        "stretches": [
+            {
+                "id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
+                "duration": "20 sec"
+            },
+            {
+                "id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
+                "duration": "20 sec"
+            },
+            {
+                "id": "F63E5CCC-5054-4883-9C1A-B244BB949875",
+                "duration": "20 sec"
+            },
+            {
+                "id": "B4E2901B-5A48-4592-BED7-5407968D8DE8",
+                "duration": "20 sec"
+            },
+            {
+                "id": "BF742888-47FB-492A-8763-9A66E28F5097",
+                "duration": "20 sec"
+            },
+            {
+                "id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
+                "duration": "30 each"
+            },
+            {
+                "id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
+                "duration": "30 each"
+            },
+            {
+                "id": "BF742888-47FB-492A-8763-9A66E28F5097",
+                "duration": "20 sec"
+            }
+        ]
+    },
+    {
+        "day": 11,
+        "name": "first quarter pt. 3",
+        "stretches": [
+            {
+                "id": "50382D1D-9F5A-4F75-8D02-7783F38E1A40",
+                "duration": "20 sec"
+            },
+            {
+                "id": "422C0A5C-E1E6-492E-9CD3-36F27426CE77",
+                "duration": "30 sec"
+            },
+            {
+                "id": "5F83AF21-7810-4CD0-83A7-1735EE8F5FB7",
+                "duration": "30 sec"
+            },
+            {
+                "id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
+                "duration": "10 each"
+            },
+            {
+                "id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
+                "duration": "10 each"
+            },
+            {
+                "id": "B6407BB2-8B58-4D78-8EDE-5042C2E1975D",
+                "duration": "3 sets to exhaustion"
+            },
+            {
+                "id": "3E954C25-908A-450D-A78B-CF78ED0147D4",
+                "duration": "3 sets to exhaustion"
+            }
+        ]
+    },
+    {
+        "day": 12,
+        "name": "waxing gibbous (rest day)",
+        "stretches": [
+        ]
+    },
+    {
+        "day": 13,
+        "name": "waxing gibbous pt. 1",
+        "stretches": [
+            {
+                "id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
+                "duration": "20 sec"
+            },
+            {
+                "id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
+                "duration": "20 sec"
+            },
+            {
+                "id": "BF742888-47FB-492A-8763-9A66E28F5097",
+                "duration": "30 sec"
+            },
+            {
+                "id": "50382D1D-9F5A-4F75-8D02-7783F38E1A40",
+                "duration": "20 sec"
+            },
+            {
+                "id": "31E9AAE2-E039-4446-8777-31319D297D51",
+                "duration": "20 each"
+            },
+            {
+                "id": "94859A83-1B35-4ABB-9106-B008476A4BD1",
+                "duration": "20 each"
+            },
+            {
+                "id": "FDB39738-DAF9-4A74-90A3-CD9405B3907A",
+                "duration": "3 sets of 10"
+            },
+            {
+                "id": "D43D7FF8-5B6F-402B-856B-49B05BD4C5A5",
+                "duration": "3 sets of 10"
+            }
+        ]
+    },
+    {
+        "day": 14,
+        "name": "waxing gibbous pt. 2",
+        "stretches": [
+            {
+                "id": "B4E2901B-5A48-4592-BED7-5407968D8DE8",
+                "duration": "20 sec"
+            },
+            {
+                "id": "F63E5CCC-5054-4883-9C1A-B244BB949875",
+                "duration": "20 sec"
+            },
+            {
+                "id": "BF742888-47FB-492A-8763-9A66E28F5097",
+                "duration": "30 sec"
+            },
+            {
+                "id": "5F83AF21-7810-4CD0-83A7-1735EE8F5FB7",
+                "duration": "30 sec"
+            },
+            {
+                "id": "C7558169-D91B-4C8E-B056-1BC95E914083",
+                "duration": "30 sec"
+            },
+            {
+                "id": "6FE060C8-199F-48F4-91DC-B3D39DE093B1",
+                "duration": "20 sec"
+            },
+            {
+                "id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
+                "duration": "20 each"
+            },
+            {
+                "id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
+                "duration": "20 each"
+            }
+        ]
+    },
+    {
+        "day": 15,
+        "name": "waxing gibbous pt. 3",
+        "stretches": [
+            {
+                "id": "2E276DC6-E5FD-49B0-849B-CA6E652F1809",
+                "duration": "20 sec"
+            },
+            {
+                "id": "F63E5CCC-5054-4883-9C1A-B244BB949875",
+                "duration": "20 sec"
+            },
+            {
+                "id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
+                "duration": "20 sec"
+            },
+            {
+                "id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
+                "duration": "20 sec"
+            },
+            {
+                "id": "BF742888-47FB-492A-8763-9A66E28F5097",
+                "duration": "30 sec"
+            },
+            {
+                "id": "50382D1D-9F5A-4F75-8D02-7783F38E1A40",
+                "duration": "20 sec"
+            },
+            {
+                "id": "B984D6E5-CC32-4438-82C1-891B20131212",
+                "duration": "3 sets to exhaustion"
+            },
+            {
+                "id": "1FDA1BCC-8C85-42F4-BF4E-CDDA684F3C76",
+                "duration": "3 sets to exhaustion"
+            }
+        ]
+    },
+    {
+        "day": 16,
+        "name": "full moon (rest day)",
+        "stretches": [
+        ]
+    },
+    {
+        "day": 17,
+        "name": "full moon pt. 1",
+        "stretches": [
+            {
+                "id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
+                "duration": "20 sec"
+            },
+            {
+                "id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
+                "duration": "20 sec"
+            },
+            {
+                "id": "AF9FA161-26C5-46CA-956F-1D26CFBB21AB",
+                "duration": "30 sec"
+            },
+            {
+                "id": "422C0A5C-E1E6-492E-9CD3-36F27426CE77",
+                "duration": "20 sec"
+            },
+            {
+                "id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
+                "duration": "15 each"
+            },
+            {
+                "id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
+                "duration": "15 each"
+            },
+            {
+                "id": "E9A8537C-5DD4-414A-8BC8-C21EFFF7CD65",
+                "duration": "3 sets of 10 (5 secs out, 5 secs back)"
+            },
+            {
+                "id": "03B4A600-72C7-4D81-A4D1-C1D8C9CDB0CB",
+                "duration": "3 sets of 10 (5 secs out, 5 secs back)"
+            }
+        ]
+    },
+    {
+        "day": 18,
+        "name": "full moon pt. 2",
+        "stretches": [
+            {
+                "id": "F63E5CCC-5054-4883-9C1A-B244BB949875",
+                "duration": "20 sec"
+            },
+            {
+                "id": "7CF935E0-6504-4F44-A520-2B8A86C25BE6",
+                "duration": "20 sec"
+            },
+            {
+                "id": "37A66116-9304-4C9D-A618-9C853827E50F",
+                "duration": "30 sec"
+            },
+            {
+                "id": "BF742888-47FB-492A-8763-9A66E28F5097",
+                "duration": "30 sec"
+            },
+            {
+                "id": "C7558169-D91B-4C8E-B056-1BC95E914083",
+                "duration": "20 sec"
+            },
+            {
+                "id": "422C0A5C-E1E6-492E-9CD3-36F27426CE77",
+                "duration": "30 sec"
+            },
+            {
+                "id": "5F83AF21-7810-4CD0-83A7-1735EE8F5FB7",
+                "duration": "30 sec"
+            },
+            {
+                "id": "50382D1D-9F5A-4F75-8D02-7783F38E1A40",
+                "duration": "20 sec"
+            },
+            {
+                "id": "94859A83-1B35-4ABB-9106-B008476A4BD1",
+                "duration": "20 each"
+            },
+            {
+                "id": "31E9AAE2-E039-4446-8777-31319D297D51",
+                "duration": "20 each"
+            }
+        ]
+    },
+    {
+        "day": 19,
+        "name": "full moon pt. 3",
+        "stretches": [
+            {
+                "id": "1094E43B-95A7-4A87-AE32-550A936A7478",
+                "duration": "20 sec"
+            },
+            {
+                "id": "8A3053C4-9033-41AF-A3CB-381CEF341709",
+                "duration": "15 each"
+            },
+            {
+                "id": "E9A8537C-5DD4-414A-8BC8-C21EFFF7CD65",
+                "duration": "3 sets of 10 (5 secs out, 5 secs back)"
+            },
+            {
+                "id": "03B4A600-72C7-4D81-A4D1-C1D8C9CDB0CB",
+                "duration": "3 sets of 10 (5 secs out, 5 secs back)"
+            },
+            {
+                "id": "B6407BB2-8B58-4D78-8EDE-5042C2E1975D",
+                "duration": "3 sets to exhaustion"
+            },
+            {
+                "id": "3E954C25-908A-450D-A78B-CF78ED0147D4",
+                "duration": "3 sets to exhaustion"
+            }
+        ]
+    },
+    {
+        "day": 20,
+        "name": "waning gibbous (rest day)",
+        "stretches": [
+        ]
+    },
+    {
+        "day": 21,
+        "name": "waning gibbous pt. 1",
+        "stretches": [
+            {
+                "id": "1A0DC942-D1A8-49C5-8AF1-70F0BB404EA5",
+                "duration": "20 sec"
+            },
+            {
+                "id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
+                "duration": "20 sec"
+            },
+            {
+                "id": "F63E5CCC-5054-4883-9C1A-B244BB949875",
+                "duration": "20 sec"
+            },
+            {
+                "id": "B4E2901B-5A48-4592-BED7-5407968D8DE8",
+                "duration": "20 sec"
+            },
+            {
+                "id": "BF742888-47FB-492A-8763-9A66E28F5097",
+                "duration": "30 sec"
+            },
+            {
+                "id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
+                "duration": "20 each"
+            },
+            {
+                "id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
+                "duration": "20 each"
+            },
+            {
+                "id": "B984D6E5-CC32-4438-82C1-891B20131212",
+                "duration": "20, 15, 10 each"
+            },
+            {
+                "id": "1FDA1BCC-8C85-42F4-BF4E-CDDA684F3C76",
+                "duration": "20, 15, 10 each"
+            }
+        ]
+    },
+    {
+        "day": 22,
+        "name": "waning gibbous pt. 2",
+        "stretches": [
+            {
+                "id": "1A0DC942-D1A8-49C5-8AF1-70F0BB404EA5",
+                "duration": "20 sec"
+            },
+            {
+                "id": "6FE060C8-199F-48F4-91DC-B3D39DE093B1",
+                "duration": "20 sec"
+            },
+            {
+                "id": "7CF935E0-6504-4F44-A520-2B8A86C25BE6",
+                "duration": "20 sec"
+            },
+            {
+                "id": "37A66116-9304-4C9D-A618-9C853827E50F",
+                "duration": "30 sec"
+            },
+            {
+                "id": "BF742888-47FB-492A-8763-9A66E28F5097",
+                "duration": "30 sec"
+            },
+            {
+                "id": "31E9AAE2-E039-4446-8777-31319D297D51",
+                "duration": "30 each"
+            },
+            {
+                "id": "8B28D52B-43E0-4614-9D0B-0703764D025C",
+                "duration": "30 each"
+            },
+            {
+                "id": "422C0A5C-E1E6-492E-9CD3-36F27426CE77",
+                "duration": "30 sec"
+            }
+        ]
+    },
+    {
+        "day": 23,
+        "name": "waning gibbous pt. 3",
+        "stretches": [
+            {
+                "id": "",
+                "duration": ""
+            },
+            {
+                "id": "AF9FA161-26C5-46CA-956F-1D26CFBB21AB",
+                "duration": "20 sec"
+            },
+            {
+                "id": "2E276DC6-E5FD-49B0-849B-CA6E652F1809",
+                "duration": "20 sec"
+            },
+            {
+                "id": "B4E2901B-5A48-4592-BED7-5407968D8DE8",
+                "duration": "20 sec"
+            },
+            {
+                "id": "8A3053C4-9033-41AF-A3CB-381CEF341709",
+                "duration": "15 each"
+            },
+            {
+                "id": "E9A8537C-5DD4-414A-8BC8-C21EFFF7CD65",
+                "duration": "3 sets of 10 (5 secs out, 5 secs back)"
+            },
+            {
+                "id": "99E700F7-A41F-4DD4-AEED-DA64ACD6AF54",
+                "duration": "3 sets of 10 (5 secs out, 5 secs back)"
+            },
+            {
+                "id": "03B4A600-72C7-4D81-A4D1-C1D8C9CDB0CB",
+                "duration": "3 sets of 10 (5 secs out, 5 secs back)"
+            },
+            {
+                "id": "B6407BB2-8B58-4D78-8EDE-5042C2E1975D",
+                "duration": "3 sets to exhaustion"
+            },
+            {
+                "id": "3E954C25-908A-450D-A78B-CF78ED0147D4",
+                "duration": "3 sets to exhaustion"
+            }
+        ]
+    },
+    {
+        "day": 24,
+        "name": "third quarter (rest day)",
+        "stretches": [
+        ]
+    },
+    {
+        "day": 25,
+        "name": "third quarter pt. 1",
+        "stretches": [
+            {
+                "id": "1094E43B-95A7-4A87-AE32-550A936A7478",
+                "duration": "30 sec"
+            },
+            {
+                "id": "2E276DC6-E5FD-49B0-849B-CA6E652F1809",
+                "duration": "20 sec"
+            },
+            {
+                "id": "94859A83-1B35-4ABB-9106-B008476A4BD1",
+                "duration": "20 each"
+            },
+            {
+                "id": "31E9AAE2-E039-4446-8777-31319D297D51",
+                "duration": "20 each"
+            },
+            {
+                "id": "22DC0AF4-0762-4CD4-BCEF-1F61CDEA0D10",
+                "duration": "20, 15, 10 each"
+            },
+            {
+                "id": "FDE18933-B044-4FE6-9EF7-AB0E05B9399C",
+                "duration": "20, 15, 10 each"
+            }
+        ]
+    },
+    {
+        "day": 26,
+        "name": "third quarter pt. 2",
+        "stretches": [
+            {
+                "id": "B4E2901B-5A48-4592-BED7-5407968D8DE8",
+                "duration": "20 sec"
+            },
+            {
+                "id": "F63E5CCC-5054-4883-9C1A-B244BB949875",
+                "duration": "20 sec"
+            },
+            {
+                "id": "BF742888-47FB-492A-8763-9A66E28F5097",
+                "duration": "30 sec"
+            },
+            {
+                "id": "422C0A5C-E1E6-492E-9CD3-36F27426CE77",
+                "duration": "30 sec"
+            },
+            {
+                "id": "5F83AF21-7810-4CD0-83A7-1735EE8F5FB7",
+                "duration": "30 sec"
+            },
+            {
+                "id": "C7558169-D91B-4C8E-B056-1BC95E914083",
+                "duration": "20 sec"
+            },
+            {
+                "id": "6FE060C8-199F-48F4-91DC-B3D39DE093B1",
+                "duration": "20 sec"
+            },
+            {
+                "id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
+                "duration": "30 each"
+            },
+            {
+                "id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
+                "duration": "30 each"
+            }
+        ]
+    },
+    {
+        "day": 27,
+        "name": "third quarter pt. 3",
+        "stretches": [
+            {
+                "id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
+                "duration": "20 sec"
+            },
+            {
+                "id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
+                "duration": "20 sec"
+            },
+            {
+                "id": "AF9FA161-26C5-46CA-956F-1D26CFBB21AB",
+                "duration": "20 sec"
+            },
+            {
+                "id": "BF742888-47FB-492A-8763-9A66E28F5097",
+                "duration": "30 sec"
+            },
+            {
+                "id": "50382D1D-9F5A-4F75-8D02-7783F38E1A40",
+                "duration": "20 sec"
+            },
+            {
+                "id": "94859A83-1B35-4ABB-9106-B008476A4BD1",
+                "duration": "20 each"
+            },
+            {
+                "id": "8B28D52B-43E0-4614-9D0B-0703764D025C",
+                "duration": "20 each"
+            },
+            {
+                "id": "B984D6E5-CC32-4438-82C1-891B20131212",
+                "duration": "4 sets to exhaustion"
+            },
+            {
+                "id": "1FDA1BCC-8C85-42F4-BF4E-CDDA684F3C76",
+                "duration": "4 sets to exhaustion"
+            }
+        ]
+    },
+    {
+        "day": 28,
+        "name": "waning crescent (rest day)",
+        "stretches": [
+        ]
+    },
+    {
+        "day": 29,
+        "name": "waning crescent pt. 1",
+        "stretches": [
+            {
+                "id": "1094E43B-95A7-4A87-AE32-550A936A7478",
+                "duration": "30 sec"
+            },
+            {
+                "id": "2E276DC6-E5FD-49B0-849B-CA6E652F1809",
+                "duration": "20 sec"
+            },
+            {
+                "id": "422C0A5C-E1E6-492E-9CD3-36F27426CE77",
+                "duration": "30 sec"
+            },
+            {
+                "id": "C7558169-D91B-4C8E-B056-1BC95E914083",
+                "duration": "20 sec"
+            },
+            {
+                "id": "5A2E78D9-CCA8-4D45-BADF-5F3F946315CC",
+                "duration": "20 each"
+            },
+            {
+                "id": "A923394E-A774-4D8F-A024-65EAECC63BA3",
+                "duration": "20 each"
+            },
+            {
+                "id": "FDB39738-DAF9-4A74-90A3-CD9405B3907A",
+                "duration": "3 sets of 15"
+            },
+            {
+                "id": "D43D7FF8-5B6F-402B-856B-49B05BD4C5A5",
+                "duration": "3 sets of 15"
+            }
+        ]
+    },
+    {
+        "day": 30,
+        "name": "waning crescent pt. 1",
+        "stretches": [
+            {
+                "id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
+                "duration": "20 sec"
+            },
+            {
+                "id": "AA6A5965-94EB-4D28-B036-24A9228ECC1D",
+                "duration": "20 sec"
+            },
+            {
+                "id": "F63E5CCC-5054-4883-9C1A-B244BB949875",
+                "duration": "20 sec"
+            },
+            {
+                "id": "BF742888-47FB-492A-8763-9A66E28F5097",
+                "duration": "30 sec"
+            },
+            {
+                "id": "31E9AAE2-E039-4446-8777-31319D297D51",
+                "duration": "40 each"
+            },
+            {
+                "id": "8B28D52B-43E0-4614-9D0B-0703764D025C",
+                "duration": "40 each"
+            },
+            {
+                "id": "422C0A5C-E1E6-492E-9CD3-36F27426CE77",
+                "duration": "30 sec"
+            },
+            {
+                "id": "C7558169-D91B-4C8E-B056-1BC95E914083",
+                "duration": "30 sec"
+            }
+        ]
+    }
+]
