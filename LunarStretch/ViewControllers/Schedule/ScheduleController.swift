@@ -35,7 +35,20 @@ class ScheduleController: BaseViewController, UITableViewDataSource, UITableView
     
     private func setupUI() {
         self.title = "SCHEDULE"
+        let infoButton = UIButton(type: .infoLight)
+        infoButton.addTarget(self, action: #selector(infoTapped(_:)), for: .touchUpInside)
+        let barButton = UIBarButtonItem(customView: infoButton)
+        self.navigationItem.rightBarButtonItem = barButton
         scheduleTable.register(ScheduleHeader.self, forHeaderFooterViewReuseIdentifier: ScheduleHeader.reuseId)
+    }
+    
+    // MARK: - Actions
+    
+    @IBAction func infoTapped(_ sender: AnyObject) {
+        let statsMessage = "\(viewModel.dayProgress)\n\(viewModel.stretchProgress)"
+        let alert = UIAlertController(title: "Your Stats", message: statsMessage, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     // MARK: - UITableViewDataSource

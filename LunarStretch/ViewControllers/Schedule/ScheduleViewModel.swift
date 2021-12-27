@@ -13,6 +13,47 @@ class ScheduleViewModel {
     
     private var stretchesLookup = [String : StretchInfo]()
     var days = [ScheduleDay]()
+    var daysCompleted: Int {
+        var count = 0
+        for curDay in days {
+            if curDay.isCompleted == true {
+                count += 1
+            }
+        }
+        return count
+    }
+    var dayProgress: String {
+        if days.count == 0 {
+            return ""
+        }
+        var percentage = Double(daysCompleted) / Double(days.count)
+        percentage = percentage * Double(100)
+        let percentageString = "\(Int(percentage))%"
+        
+        return "\(daysCompleted) / \(days.count) Days Completed (\(percentageString))"
+    }
+    var stretchProgress: String {
+        var stretchCount = 0
+        var completeCount = 0
+        for curDay in days {
+            if let stretches = curDay.stretches {
+                for curStretch in stretches {
+                    stretchCount += 1
+                    if curStretch.isCompleted == true {
+                        completeCount += 1
+                    }
+                }
+            }
+        }
+        if stretchCount == 0 {
+            return ""
+        }
+        var percentage = Double(completeCount) / Double(stretchCount)
+        percentage = percentage * Double(100)
+        let percentageString = "\(Int(percentage))%"
+        
+        return "\(completeCount) / \(stretchCount) Total Stretches (\(percentageString))"
+    }
  
     // MARK: - Init
     
