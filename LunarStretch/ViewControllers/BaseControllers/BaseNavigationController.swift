@@ -31,7 +31,7 @@ class BaseNavigationController: UINavigationController, UINavigationControllerDe
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .default
+        return .lightContent
     }
 
     // MARK: -  UIViewController

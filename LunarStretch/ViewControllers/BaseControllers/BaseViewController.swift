@@ -25,7 +25,7 @@ class BaseViewController: UIViewController {
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .default
+        return .lightContent
     }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
