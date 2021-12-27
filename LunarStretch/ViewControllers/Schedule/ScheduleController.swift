@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ScheduleController: BaseViewController, UITableViewDataSource, UITableViewDelegate, ScheduleCellDelegate {
+class ScheduleController: BaseViewController, UITableViewDataSource, UITableViewDelegate, ScheduleCellDelegate, StretchControllerDelegate {
  
     // MARK: - Properties
     
@@ -18,6 +18,7 @@ class ScheduleController: BaseViewController, UITableViewDataSource, UITableView
     private lazy var viewModel: ScheduleViewModel = {
        return ScheduleViewModel()
     }()
+    private var selectedIndexPath: IndexPath?
     
     // MARK: - Init
     
@@ -94,7 +95,10 @@ class ScheduleController: BaseViewController, UITableViewDataSource, UITableView
         guard let curStretch = stretchAt(indexPath: indexPath)  else {
             return
         }
+        selectedIndexPath = indexPath
+        
         let controller = StretchController.createControllerFor(stretch: curStretch)
+        controller.delegate = self
         self.navigationController?.pushViewController(controller, animated: true)
     }
     
@@ -116,6 +120,20 @@ class ScheduleController: BaseViewController, UITableViewDataSource, UITableView
             return
         }
         toggleStretchCompletedAt(indexPath: indexPath)
+    }
+    
+    // MARK: - StretchControllerDelegate
+    
+    func stretchCompletionToggled(stretch: ScheduleStretch, controller: StretchController) {
+        guard let indexPath = selectedIndexPath else {
+            return
+        }
+        
+        toggleStretchCompletedAt(indexPath: indexPath)
+    }
+    
+    func stretchControllerWillDismiss(controller: StretchController) {
+        selectedIndexPath = nil
     }
     
 }

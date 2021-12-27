@@ -5,6 +5,5 @@ target 'LunarStretch' do
   use_frameworks!
 
   # Pods for LunarStretch
-  pod 'youtube-ios-player-helper'
 
 end

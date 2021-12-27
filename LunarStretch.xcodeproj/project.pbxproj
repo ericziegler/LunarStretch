@@ -74,6 +74,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		024A4E3857226FD6707F1F37 /* Pods-LunarStretch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunarStretch.debug.xcconfig"; path = "Target Support Files/Pods-LunarStretch/Pods-LunarStretch.debug.xcconfig"; sourceTree = "<group>"; };
+		3905522E562F8F197AA66362 /* Pods-LunarStretch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunarStretch.release.xcconfig"; path = "Target Support Files/Pods-LunarStretch/Pods-LunarStretch.release.xcconfig"; sourceTree = "<group>"; };
 		3B9618434CCDA039FA54E40C /* Pods-LunarStretch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunarStretch.release.xcconfig"; path = "Target Support Files/Pods-LunarStretch/Pods-LunarStretch.release.xcconfig"; sourceTree = "<group>"; };
 		6032A17AFE06C0A9908B3D7D /* Pods-LunarStretch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunarStretch.debug.xcconfig"; path = "Target Support Files/Pods-LunarStretch/Pods-LunarStretch.debug.xcconfig"; sourceTree = "<group>"; };
 		789F451A27773C0E00498E6D /* LunarStretch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunarStretch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +173,7 @@
 				789F451C27773C0E00498E6D /* LunarStretch */,
 				789F451B27773C0E00498E6D /* Products */,
 				51493754F05800293F9CBFDD /* Frameworks */,
+				C555F184EA8455F06FE02DCB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -414,6 +417,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C555F184EA8455F06FE02DCB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				024A4E3857226FD6707F1F37 /* Pods-LunarStretch.debug.xcconfig */,
+				3905522E562F8F197AA66362 /* Pods-LunarStretch.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -425,7 +438,6 @@
 				789F451627773C0E00498E6D /* Sources */,
 				789F451727773C0E00498E6D /* Frameworks */,
 				789F451827773C0E00498E6D /* Resources */,
-				FBACC74412C45C0B58BF8692 /* [CP] Embed Pods Frameworks */,
 				789F453227773E8800498E6D /* Update Build Number */,
 			);
 			buildRules = (
@@ -532,23 +544,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FBACC74412C45C0B58BF8692 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LunarStretch/Pods-LunarStretch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LunarStretch/Pods-LunarStretch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LunarStretch/Pods-LunarStretch-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

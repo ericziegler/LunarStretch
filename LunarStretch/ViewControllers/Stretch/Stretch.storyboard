@@ -16,18 +16,81 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbn-O8-dWB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="233"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cbn-O8-dWB" secondAttribute="height" multiplier="16:9" id="fnn-Yc-CxW"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stretch Name" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2L-Oe-ERN" customClass="LightLabel" customModule="LunarStretch" customModuleProvider="target">
+                                <rect key="frame" x="16" y="289" width="382" height="64.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                <color key="textColor" name="AppTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOp-vD-zzq" customClass="MediumLabel" customModule="LunarStretch" customModuleProvider="target">
+                                <rect key="frame" x="16" y="361.5" width="382" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" name="AppTextSecondaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZn-x5-5bM" customClass="ActionButton" customModule="LunarStretch" customModuleProvider="target">
+                                <rect key="frame" x="57" y="792" width="300" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gZn-x5-5bM" secondAttribute="height" multiplier="50:9" id="abe-se-bH3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="COMPLETE"/>
+                                <connections>
+                                    <action selector="completeTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="r3Y-VE-KAD"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="AppBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gZn-x5-5bM" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="75:224" id="1Jx-CS-fD5"/>
+                            <constraint firstItem="EOp-vD-zzq" firstAttribute="leading" secondItem="G2L-Oe-ERN" secondAttribute="leading" id="1mq-nt-mQd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="G2L-Oe-ERN" secondAttribute="trailing" constant="16" id="1rF-L0-wwN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gZn-x5-5bM" secondAttribute="bottom" constant="16" id="4Rg-mi-hPT"/>
+                            <constraint firstItem="cbn-O8-dWB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="HrC-Z7-8Oj"/>
+                            <constraint firstItem="EOp-vD-zzq" firstAttribute="top" secondItem="G2L-Oe-ERN" secondAttribute="bottom" constant="8" id="Lan-Ey-kRh"/>
+                            <constraint firstItem="G2L-Oe-ERN" firstAttribute="top" secondItem="cbn-O8-dWB" secondAttribute="bottom" constant="12" id="PPW-DN-Azz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cbn-O8-dWB" secondAttribute="trailing" id="Ts7-Oh-jPe"/>
+                            <constraint firstItem="cbn-O8-dWB" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="aBD-MD-Cu1"/>
+                            <constraint firstItem="EOp-vD-zzq" firstAttribute="trailing" secondItem="G2L-Oe-ERN" secondAttribute="trailing" id="iIF-8r-RyF"/>
+                            <constraint firstItem="gZn-x5-5bM" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="sad-Iu-olc"/>
+                            <constraint firstItem="G2L-Oe-ERN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="tEh-1f-URm"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="completeButton" destination="gZn-x5-5bM" id="MN2-In-Qsz"/>
+                        <outlet property="durationLabel" destination="EOp-vD-zzq" id="kBZ-RQ-W5E"/>
+                        <outlet property="nameLabel" destination="G2L-Oe-ERN" id="MGs-0T-gun"/>
+                        <outlet property="playerView" destination="cbn-O8-dWB" id="BMm-G9-tc5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="108"/>
+            <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
         </scene>
     </scenes>
     <resources>
         <namedColor name="AppBackgroundColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppTextColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppTextSecondaryColor">
+            <color red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
