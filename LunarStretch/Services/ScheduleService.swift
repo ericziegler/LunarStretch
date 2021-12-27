@@ -34,6 +34,7 @@ class ScheduleService {
             let schedule = try decoder.decode([ScheduleDay].self, from: data)
             return schedule
         } catch {
+            print(error)
             return nil
         }
     }
