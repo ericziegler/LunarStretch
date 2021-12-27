@@ -7,14 +7,21 @@
 
 import UIKit
 
-class MainController: UIViewController {
+class MainController: BaseViewController {
  
     // MARK: - Properties
     
     static let storyboardId = "MainControllerId"
     
     @IBOutlet var navigationContainer: UIView!
-    @IBOutlet var timerContainter: UIView!
+    @IBOutlet var timerContainer: UIView!
+    
+    private lazy var scheduleController = {
+        ScheduleController.createController()
+    }()
+    private lazy var timerController =  {
+        TimerController.createController()
+    }()
     
     // MARK: - Init
     
@@ -24,7 +31,9 @@ class MainController: UIViewController {
     }
     
     private func setupControllers() {
-        // TODO: EZ - Create schedule controller, timer controller. Place in containers.
+        let navController = BaseNavigationController(rootViewController: scheduleController)
+        navController.view.fillInParentView(parentView: navigationContainer)
+        timerController.view.fillInParentView(parentView: timerContainer)
     }
     
 }

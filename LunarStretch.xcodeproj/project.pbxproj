@@ -55,6 +55,10 @@
 		789F4590277A17A100498E6D /* ScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F458F277A17A100498E6D /* ScheduleService.swift */; };
 		789F4592277A189C00498E6D /* StrechesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F4591277A189C00498E6D /* StrechesService.swift */; };
 		789F4594277A19D300498E6D /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F4593277A19D300498E6D /* MainController.swift */; };
+		789F4597277A1C6900498E6D /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F4596277A1C6900498E6D /* TimerController.swift */; };
+		789F4599277A1C7000498E6D /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789F4598277A1C7000498E6D /* Timer.storyboard */; };
+		789F459C277A213000498E6D /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F459B277A213000498E6D /* ScheduleController.swift */; };
+		789F459E277A213700498E6D /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789F459D277A213700498E6D /* Schedule.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +113,10 @@
 		789F458F277A17A100498E6D /* ScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleService.swift; sourceTree = "<group>"; };
 		789F4591277A189C00498E6D /* StrechesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrechesService.swift; sourceTree = "<group>"; };
 		789F4593277A19D300498E6D /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		789F4596277A1C6900498E6D /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
+		789F4598277A1C7000498E6D /* Timer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timer.storyboard; sourceTree = "<group>"; };
+		789F459B277A213000498E6D /* ScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
+		789F459D277A213700498E6D /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
 		AE84A6A639398A319FBA4E56 /* Pods_LunarStretch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunarStretch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -192,6 +200,8 @@
 			children = (
 				789F453527773F2400498E6D /* BaseControllers */,
 				789F453A27773F8D00498E6D /* Main */,
+				789F459A277A212100498E6D /* Schedule */,
+				789F4595277A1C5C00498E6D /* Timer */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -325,6 +335,24 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		789F4595277A1C5C00498E6D /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				789F4598277A1C7000498E6D /* Timer.storyboard */,
+				789F4596277A1C6900498E6D /* TimerController.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		789F459A277A212100498E6D /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				789F459D277A213700498E6D /* Schedule.storyboard */,
+				789F459B277A213000498E6D /* ScheduleController.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
 		841555077786D7EE05786FA7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,10 +423,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				789F4599277A1C7000498E6D /* Timer.storyboard in Resources */,
 				789F457D277742AD00498E6D /* Roboto-Medium.ttf in Resources */,
 				789F4580277742AD00498E6D /* Roboto-Regular.ttf in Resources */,
 				789F452A27773C1000498E6D /* LaunchScreen.storyboard in Resources */,
 				789F45842777502000498E6D /* stretches.json in Resources */,
+				789F459E277A213700498E6D /* Schedule.storyboard in Resources */,
 				789F457F277742AD00498E6D /* Roboto-Light.ttf in Resources */,
 				789F457E277742AD00498E6D /* Roboto-Bold.ttf in Resources */,
 				789F452727773C1000498E6D /* Assets.xcassets in Resources */,
@@ -482,9 +512,11 @@
 				789F456027773FF900498E6D /* UICollectionViewFlowLayoutComponents.swift in Sources */,
 				789F456B27773FF900498E6D /* UIFontExtensions.swift in Sources */,
 				789F455F27773FF900498E6D /* LabelComponents.swift in Sources */,
+				789F4597277A1C6900498E6D /* TimerController.swift in Sources */,
 				789F453727773F3200498E6D /* BaseViewController.swift in Sources */,
 				789F451E27773C0E00498E6D /* AppDelegate.swift in Sources */,
 				789F45772777402200498E6D /* AppUtilities.swift in Sources */,
+				789F459C277A213000498E6D /* ScheduleController.swift in Sources */,
 				789F456227773FF900498E6D /* ColorComponents.swift in Sources */,
 				789F457227773FF900498E6D /* DateExtensions.swift in Sources */,
 				789F456927773FF900498E6D /* UIImageExtensions.swift in Sources */,

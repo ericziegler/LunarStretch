@@ -25,15 +25,15 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GSr-9k-Vot">
-                                <rect key="frame" x="0.0" y="44" width="414" height="738"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="782"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dzm-VH-0Xg"/>
                         <color key="backgroundColor" name="AppBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="GSr-9k-Vot" firstAttribute="top" secondItem="6PU-26-F3u" secondAttribute="top" id="2Jp-Kd-yfd"/>
                             <constraint firstItem="wQt-cB-QUB" firstAttribute="leading" secondItem="dzm-VH-0Xg" secondAttribute="leading" id="PlA-qS-Nhl"/>
-                            <constraint firstItem="GSr-9k-Vot" firstAttribute="top" secondItem="dzm-VH-0Xg" secondAttribute="top" id="eZE-aa-cfZ"/>
                             <constraint firstItem="dzm-VH-0Xg" firstAttribute="bottom" secondItem="wQt-cB-QUB" secondAttribute="bottom" id="eop-7M-HuS"/>
                             <constraint firstItem="GSr-9k-Vot" firstAttribute="leading" secondItem="dzm-VH-0Xg" secondAttribute="leading" id="hhg-Es-cJr"/>
                             <constraint firstItem="dzm-VH-0Xg" firstAttribute="trailing" secondItem="wQt-cB-QUB" secondAttribute="trailing" id="sf6-R3-7rc"/>
@@ -43,12 +43,12 @@
                     </view>
                     <connections>
                         <outlet property="navigationContainer" destination="GSr-9k-Vot" id="PC5-si-nw8"/>
-                        <outlet property="timerContainter" destination="wQt-cB-QUB" id="qev-Yd-sHZ"/>
+                        <outlet property="timerContainer" destination="wQt-cB-QUB" id="FgQ-w2-OJH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ttg-X4-kHt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-235" y="84"/>
+            <point key="canvasLocation" x="-236.23188405797103" y="83.705357142857139"/>
         </scene>
     </scenes>
     <resources>
