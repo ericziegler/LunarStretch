@@ -43,7 +43,7 @@
                     </view>
                     <connections>
                         <outlet property="navigationContainer" destination="GSr-9k-Vot" id="PC5-si-nw8"/>
-                        <outlet property="timerContainer" destination="wQt-cB-QUB" id="FgQ-w2-OJH"/>
+                        <outlet property="timePickerContainer" destination="wQt-cB-QUB" id="VC9-mi-jSk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ttg-X4-kHt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

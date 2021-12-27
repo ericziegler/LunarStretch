@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,20 +14,85 @@
             <objects>
                 <viewController storyboardIdentifier="TimerControllerId" id="Y6W-OH-hqX" customClass="TimerController" customModule="LunarStretch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nn0-Fu-OG0" customClass="RegularButton" customModule="LunarStretch" customModuleProvider="target">
+                                <rect key="frame" x="374" y="20" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="3SK-PL-xSq"/>
+                                    <constraint firstAttribute="height" constant="40" id="Vbz-ni-cZk"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="Close"/>
+                                <connections>
+                                    <action selector="cancelTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8AT-16-GpM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpm-lz-tX6" customClass="RegularButton" customModule="LunarStretch" customModuleProvider="target">
+                                <rect key="frame" x="16" y="18" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="X5P-JM-TW8"/>
+                                    <constraint firstAttribute="width" constant="44" id="j4C-JR-jvj"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="playPauseTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9tp-bo-bat"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--:--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5g-cW-8Nh" customClass="BoldLabel" customModule="LunarStretch" customModuleProvider="target">
+                                <rect key="frame" x="156" y="9.0000000000000036" width="102" height="62.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <color key="textColor" name="AppTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcR-L9-pjr" userLabel="Separator">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                                <color key="backgroundColor" name="AppSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="YTc-SB-yCD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="AppBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zcR-L9-pjr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="7EP-t6-8Vh"/>
+                            <constraint firstItem="rpm-lz-tX6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="7Eg-mH-EMy"/>
+                            <constraint firstItem="w5g-cW-8Nh" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="DSL-0f-m3x"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zcR-L9-pjr" secondAttribute="trailing" id="VHA-Wp-q7C"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nn0-Fu-OG0" secondAttribute="trailing" id="Wwv-wy-uIt"/>
+                            <constraint firstItem="rpm-lz-tX6" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Xmw-PA-iOw"/>
+                            <constraint firstItem="nn0-Fu-OG0" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="eYC-jN-5h8"/>
+                            <constraint firstItem="zcR-L9-pjr" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="m5S-AH-gYu"/>
+                            <constraint firstItem="w5g-cW-8Nh" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="zoX-Fk-j95"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="80"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="nn0-Fu-OG0" id="W6t-BA-0VV"/>
+                        <outlet property="playPauseButton" destination="rpm-lz-tX6" id="Gia-fE-E2i"/>
+                        <outlet property="timerLabel" destination="w5g-cW-8Nh" id="1tH-3J-pwU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="108"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-156.52173913043478"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="Close" width="18" height="18"/>
+        <namedColor name="AppBackgroundColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppSeparatorColor">
+            <color red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppTextColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

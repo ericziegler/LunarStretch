@@ -26,10 +26,4 @@ class ScheduleController: BaseViewController {
         self.title = "SCHEDULE"
     }
     
-    // TODO: EZ - Remove
-    
-    override func updateAppearance() {
-        self.view.backgroundColor = UIColor.systemOrange
-    }
-    
 }

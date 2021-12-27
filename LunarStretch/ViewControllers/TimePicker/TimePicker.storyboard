@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Time Picker Controller-->
+        <scene sceneID="eW8-u0-lm7">
+            <objects>
+                <viewController storyboardIdentifier="TimePickerControllerId" id="Yr2-Ya-ICc" customClass="TimePickerController" customModule="LunarStretch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pBd-kN-Im1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JDq-ew-0WA">
+                                <rect key="frame" x="0.0" y="28" width="414" height="52"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RQx-ys-hF3">
+                                    <size key="itemSize" width="128" height="67.5"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TimePickerCellId" id="25X-to-o6e" customClass="TimePickerCell" customModule="LunarStretch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-8" width="128" height="67.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aab-dF-NQW">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="67.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPy-Sb-F9m" customClass="RegularLabel" customModule="LunarStretch" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="36" width="64" height="47"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <color key="textColor" name="AppTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="XPy-Sb-F9m" firstAttribute="centerY" secondItem="aab-dF-NQW" secondAttribute="centerY" id="1Iy-wD-aoU"/>
+                                                <constraint firstItem="XPy-Sb-F9m" firstAttribute="centerX" secondItem="aab-dF-NQW" secondAttribute="centerX" id="bcy-Hs-f8N"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="128" height="67.5"/>
+                                        <connections>
+                                            <outlet property="timeLabel" destination="XPy-Sb-F9m" id="voy-AR-1zY"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Yr2-Ya-ICc" id="POQ-hj-0Nq"/>
+                                    <outlet property="delegate" destination="Yr2-Ya-ICc" id="Ab2-aP-AxI"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="START A TIMER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnI-5r-N1a" customClass="RegularLabel" customModule="LunarStretch" customModuleProvider="target">
+                                <rect key="frame" x="16" y="8" width="115" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" name="AppTextSecondaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eoN-qH-Az5" userLabel="Separator">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                                <color key="backgroundColor" name="AppSeparatorColor"/>
+                                <color key="tintColor" name="AppSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="zyn-f7-Ca2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jjt-eA-yv0"/>
+                        <color key="backgroundColor" name="AppBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eoN-qH-Az5" firstAttribute="top" secondItem="pBd-kN-Im1" secondAttribute="top" id="2wj-Wi-aql"/>
+                            <constraint firstItem="eoN-qH-Az5" firstAttribute="leading" secondItem="Jjt-eA-yv0" secondAttribute="leading" id="4jv-xv-2WD"/>
+                            <constraint firstAttribute="bottom" secondItem="JDq-ew-0WA" secondAttribute="bottom" id="5Tg-OF-5hv"/>
+                            <constraint firstItem="JDq-ew-0WA" firstAttribute="top" secondItem="WnI-5r-N1a" secondAttribute="bottom" id="9DL-Eb-Ij8"/>
+                            <constraint firstItem="WnI-5r-N1a" firstAttribute="leading" secondItem="pBd-kN-Im1" secondAttribute="leading" constant="16" id="Gz1-3P-aFd"/>
+                            <constraint firstItem="Jjt-eA-yv0" firstAttribute="trailing" secondItem="JDq-ew-0WA" secondAttribute="trailing" id="qe8-Cj-7x4"/>
+                            <constraint firstItem="WnI-5r-N1a" firstAttribute="top" secondItem="pBd-kN-Im1" secondAttribute="top" constant="8" id="sGP-6I-E5Z"/>
+                            <constraint firstItem="eoN-qH-Az5" firstAttribute="trailing" secondItem="Jjt-eA-yv0" secondAttribute="trailing" id="uOK-fR-7F9"/>
+                            <constraint firstItem="JDq-ew-0WA" firstAttribute="leading" secondItem="Jjt-eA-yv0" secondAttribute="leading" id="z3B-1m-l8L"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="80"/>
+                    <connections>
+                        <outlet property="pickerCollection" destination="JDq-ew-0WA" id="OwO-Gu-fJU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MaU-cV-OYU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="147.82608695652175" y="9.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AppBackgroundColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppSeparatorColor">
+            <color red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppTextColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppTextSecondaryColor">
+            <color red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

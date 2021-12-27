@@ -14,13 +14,13 @@ class MainController: BaseViewController {
     static let storyboardId = "MainControllerId"
     
     @IBOutlet var navigationContainer: UIView!
-    @IBOutlet var timerContainer: UIView!
+    @IBOutlet var timePickerContainer: UIView!
     
     private lazy var scheduleController = {
         ScheduleController.createController()
     }()
-    private lazy var timerController =  {
-        TimerController.createController()
+    private lazy var timePickerController =  {
+        TimePickerController.createController()
     }()
     
     // MARK: - Init
@@ -31,9 +31,16 @@ class MainController: BaseViewController {
     }
     
     private func setupControllers() {
-        let navController = BaseNavigationController(rootViewController: scheduleController)
-        navController.view.fillInParentView(parentView: navigationContainer)
-        timerController.view.fillInParentView(parentView: timerContainer)
+        let scheduleNavController = BaseNavigationController(rootViewController: scheduleController)
+        self.addChild(scheduleNavController)
+        scheduleNavController.view.fillInParentView(parentView: navigationContainer)
+        scheduleNavController.didMove(toParent: self)
+        
+        let timeNavController = BaseNavigationController(rootViewController: timePickerController)
+        self.addChild(timeNavController)
+        timeNavController.setNavigationBarHidden(true, animated: false)
+        timeNavController.view.fillInParentView(parentView: timePickerContainer)
+        timeNavController.didMove(toParent: self)
     }
     
 }
