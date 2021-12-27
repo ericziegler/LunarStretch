@@ -69,6 +69,8 @@
 		789F45B0277A56A500498E6D /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F45AF277A56A500498E6D /* ScheduleViewModel.swift */; };
 		789F45B2277A5F0F00498E6D /* ScheduleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F45B1277A5F0F00498E6D /* ScheduleHeader.swift */; };
 		789F45B4277A5F2B00498E6D /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F45B3277A5F2B00498E6D /* ScheduleCell.swift */; };
+		789F45B7277A788700498E6D /* StretchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F45B6277A788700498E6D /* StretchController.swift */; };
+		789F45B9277A790000498E6D /* Stretch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789F45B8277A790000498E6D /* Stretch.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -137,6 +139,8 @@
 		789F45AF277A56A500498E6D /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
 		789F45B1277A5F0F00498E6D /* ScheduleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHeader.swift; sourceTree = "<group>"; };
 		789F45B3277A5F2B00498E6D /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
+		789F45B6277A788700498E6D /* StretchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchController.swift; sourceTree = "<group>"; };
+		789F45B8277A790000498E6D /* Stretch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stretch.storyboard; sourceTree = "<group>"; };
 		AE84A6A639398A319FBA4E56 /* Pods_LunarStretch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunarStretch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -221,6 +225,7 @@
 				789F453527773F2400498E6D /* BaseControllers */,
 				789F453A27773F8D00498E6D /* Main */,
 				789F459A277A212100498E6D /* Schedule */,
+				789F45B5277A787200498E6D /* Stretch */,
 				789F45A5277A28C700498E6D /* TimePicker */,
 				789F4595277A1C5C00498E6D /* Timer */,
 			);
@@ -391,6 +396,15 @@
 			path = TimePicker;
 			sourceTree = "<group>";
 		};
+		789F45B5277A787200498E6D /* Stretch */ = {
+			isa = PBXGroup;
+			children = (
+				789F45B8277A790000498E6D /* Stretch.storyboard */,
+				789F45B6277A788700498E6D /* StretchController.swift */,
+			);
+			path = Stretch;
+			sourceTree = "<group>";
+		};
 		841555077786D7EE05786FA7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -466,6 +480,7 @@
 				789F4580277742AD00498E6D /* Roboto-Regular.ttf in Resources */,
 				789F452A27773C1000498E6D /* LaunchScreen.storyboard in Resources */,
 				789F45842777502000498E6D /* stretches.json in Resources */,
+				789F45B9277A790000498E6D /* Stretch.storyboard in Resources */,
 				789F45A7277A28D600498E6D /* TimePicker.storyboard in Resources */,
 				789F459E277A213700498E6D /* Schedule.storyboard in Resources */,
 				789F457F277742AD00498E6D /* Roboto-Light.ttf in Resources */,
@@ -568,6 +583,7 @@
 				789F457127773FF900498E6D /* IntExtensions.swift in Sources */,
 				789F455A27773FF900498E6D /* TextFieldComponents.swift in Sources */,
 				789F456D27773FF900498E6D /* RangeExtensions.swift in Sources */,
+				789F45B7277A788700498E6D /* StretchController.swift in Sources */,
 				789F45B2277A5F0F00498E6D /* ScheduleHeader.swift in Sources */,
 				789F45762777402200498E6D /* FileUtilities.swift in Sources */,
 				789F455D27773FF900498E6D /* CellTransitionComponents.swift in Sources */,

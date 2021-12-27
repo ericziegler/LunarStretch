@@ -50,9 +50,7 @@ class ScheduleController: BaseViewController, UITableViewDataSource, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ScheduleCell.reuseId, for: indexPath) as! ScheduleCell
-        let curDay = viewModel.days[indexPath.section]
-        if let stretches = curDay.stretches {
-            let curStretch = stretches[indexPath.row]
+        if let curStretch = stretchAt(indexPath: indexPath) {
             cell.layoutFor(stretch: curStretch)
             cell.delegate = self
         }
@@ -61,15 +59,22 @@ class ScheduleController: BaseViewController, UITableViewDataSource, UITableView
     
     // MARK: - Helpers
     
-    private func toggleStretchCompletedAt(indexPath: IndexPath) {
+    private func stretchAt(indexPath: IndexPath) -> ScheduleStretch? {
         let curDay = viewModel.days[indexPath.section]
         if let stretches = curDay.stretches {
-            let curStretch = stretches[indexPath.row]
-            curStretch.isCompleted = !curStretch.isCompleted
-            viewModel.saveSchedule()
-            scheduleTable.reloadSections(IndexSet(integer: indexPath.section), with: .none)
-            playHaptic()
+            return stretches[indexPath.row]
         }
+        return nil
+    }
+    
+    private func toggleStretchCompletedAt(indexPath: IndexPath) {
+        guard let curStretch = stretchAt(indexPath: indexPath)  else {
+            return
+        }
+        curStretch.isCompleted = !curStretch.isCompleted
+        viewModel.saveSchedule()
+        scheduleTable.reloadSections(IndexSet(integer: indexPath.section), with: .none)
+        playHaptic()
     }
     
     // MARK: - UITableViewDelegate
@@ -86,7 +91,11 @@ class ScheduleController: BaseViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        guard let curStretch = stretchAt(indexPath: indexPath)  else {
+            return
+        }
+        let controller = StretchController.createControllerFor(stretch: curStretch)
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
