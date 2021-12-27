@@ -7,7 +7,13 @@
 
 import Foundation
 
-struct ScheduleStretch: Codable {
+class ScheduleStretch: NSObject, Codable, NSCoding {
+    
+    // MARK: - Constants
+    
+    static let idCacheKey = "ScheduleStretchIdCacheKey"
+    static let durationCacheKey = "ScheduleStretchDurationCacheKey"
+    static let isCompletedCacheKey = "ScheduleStretchIsCompletedCacheKey"
     
     // MARK: - Coding
     
@@ -20,5 +26,32 @@ struct ScheduleStretch: Codable {
     
     var id: String?
     var duration: String?
+    var isCompleted: Bool = false
+    
+    // MARK: - Init
+    
+    override init() {
+        
+    }
+    
+    // MARK: - NSCoding
+    
+    required init?(coder decoder: NSCoder) {
+        if let cachedId = decoder.decodeObject(forKey: ScheduleStretch.idCacheKey) as? String {
+            id = cachedId
+        }
+        if let cachedDuration = decoder.decodeObject(forKey: ScheduleStretch.durationCacheKey) as? String {
+            duration = cachedDuration
+        }
+        if let cachedIsCompleted = decoder.decodeObject(forKey: ScheduleStretch.isCompletedCacheKey) as? NSNumber {
+            isCompleted = cachedIsCompleted.boolValue
+        }
+    }
+    
+    func encode(with coder: NSCoder) {
+        coder.encode(id, forKey: ScheduleStretch.idCacheKey)
+        coder.encode(duration, forKey: ScheduleStretch.durationCacheKey)
+        coder.encode(NSNumber(value: isCompleted), forKey: ScheduleStretch.isCompletedCacheKey)
+    }
     
 }

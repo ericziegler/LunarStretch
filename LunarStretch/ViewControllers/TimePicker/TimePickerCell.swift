@@ -13,6 +13,6 @@ class TimePickerCell: UICollectionViewCell {
     
     static let reuseId = "TimePickerCellId"
     
-    @IBOutlet var timeLabel: RegularLabel!
+    @IBOutlet var timeLabel: LightLabel!
     
 }
