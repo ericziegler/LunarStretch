@@ -11,8 +11,8 @@ class ScheduleDay: NSObject, Codable, NSCoding {
     
     // MARK: - Constants
     
-    static let dayCacheKey = "ScheduleDayDayCacheKey"
-    static let stretchesCacheKey = "ScheduleDayStretchesCacheKey"
+    private static let dayCacheKey = "ScheduleDayDayCacheKey"
+    private static let stretchesCacheKey = "ScheduleDayStretchesCacheKey"
     
     // MARK: - Coding
     

@@ -70,6 +70,9 @@
 		789F45B4277A5F2B00498E6D /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F45B3277A5F2B00498E6D /* ScheduleCell.swift */; };
 		789F45B7277A788700498E6D /* StretchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F45B6277A788700498E6D /* StretchController.swift */; };
 		789F45B9277A790000498E6D /* Stretch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789F45B8277A790000498E6D /* Stretch.storyboard */; };
+		789F45BC277B599E00498E6D /* CheckIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789F45BB277B599E00498E6D /* CheckIn.storyboard */; };
+		789F45BE277B59A800498E6D /* CheckInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F45BD277B59A800498E6D /* CheckInController.swift */; };
+		789F45C0277B5AAB00498E6D /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789F45BF277B5AAB00498E6D /* CheckIn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +143,9 @@
 		789F45B3277A5F2B00498E6D /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
 		789F45B6277A788700498E6D /* StretchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchController.swift; sourceTree = "<group>"; };
 		789F45B8277A790000498E6D /* Stretch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stretch.storyboard; sourceTree = "<group>"; };
+		789F45BB277B599E00498E6D /* CheckIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckIn.storyboard; sourceTree = "<group>"; };
+		789F45BD277B59A800498E6D /* CheckInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInController.swift; sourceTree = "<group>"; };
+		789F45BF277B5AAB00498E6D /* CheckIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIn.swift; sourceTree = "<group>"; };
 		AE84A6A639398A319FBA4E56 /* Pods_LunarStretch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunarStretch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -214,6 +220,7 @@
 				789F453A27773F8D00498E6D /* Main */,
 				789F459A277A212100498E6D /* Schedule */,
 				789F45B5277A787200498E6D /* Stretch */,
+				789F45BA277B599000498E6D /* CheckIn */,
 				789F45A5277A28C700498E6D /* TimePicker */,
 				789F4595277A1C5C00498E6D /* Timer */,
 			);
@@ -244,6 +251,7 @@
 				789F4586277A157F00498E6D /* StretchInfo.swift */,
 				789F4588277A15BD00498E6D /* ScheduleDay.swift */,
 				789F458A277A166600498E6D /* ScheduleStretch.swift */,
+				789F45BF277B5AAB00498E6D /* CheckIn.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -393,6 +401,15 @@
 			path = Stretch;
 			sourceTree = "<group>";
 		};
+		789F45BA277B599000498E6D /* CheckIn */ = {
+			isa = PBXGroup;
+			children = (
+				789F45BB277B599E00498E6D /* CheckIn.storyboard */,
+				789F45BD277B59A800498E6D /* CheckInController.swift */,
+			);
+			path = CheckIn;
+			sourceTree = "<group>";
+		};
 		841555077786D7EE05786FA7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -472,6 +489,7 @@
 				789F457E277742AD00498E6D /* Roboto-Bold.ttf in Resources */,
 				789F452727773C1000498E6D /* Assets.xcassets in Resources */,
 				789F452527773C0E00498E6D /* Main.storyboard in Resources */,
+				789F45BC277B599E00498E6D /* CheckIn.storyboard in Resources */,
 				789F45852777502000498E6D /* schedule.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +535,7 @@
 				789F453727773F3200498E6D /* BaseViewController.swift in Sources */,
 				789F45AB277A30B600498E6D /* TimerViewModel.swift in Sources */,
 				789F451E27773C0E00498E6D /* AppDelegate.swift in Sources */,
+				789F45C0277B5AAB00498E6D /* CheckIn.swift in Sources */,
 				789F45772777402200498E6D /* AppUtilities.swift in Sources */,
 				789F45A2277A277500498E6D /* TimePickerCell.swift in Sources */,
 				789F45A4277A28C000498E6D /* TimePickerViewModel.swift in Sources */,
@@ -524,6 +543,7 @@
 				789F456227773FF900498E6D /* ColorComponents.swift in Sources */,
 				789F457227773FF900498E6D /* DateExtensions.swift in Sources */,
 				789F456927773FF900498E6D /* UIImageExtensions.swift in Sources */,
+				789F45BE277B59A800498E6D /* CheckInController.swift in Sources */,
 				789F4587277A157F00498E6D /* StretchInfo.swift in Sources */,
 				789F4592277A189C00498E6D /* StrechesService.swift in Sources */,
 				789F457127773FF900498E6D /* IntExtensions.swift in Sources */,

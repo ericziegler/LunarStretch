@@ -30,7 +30,17 @@ class ScheduleController: BaseViewController, UITableViewDataSource, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initViewModel()
         setupUI()
+    }
+    
+    private func initViewModel() {
+        viewModel.completedToggled = { [unowned self] indexPath in
+            DispatchQueue.main.async {
+                scheduleTable.reloadSections(IndexSet(integer: indexPath.section), with: .none)
+                playHaptic()
+            }
+        }
     }
     
     private func setupUI() {
@@ -64,31 +74,11 @@ class ScheduleController: BaseViewController, UITableViewDataSource, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ScheduleCell.reuseId, for: indexPath) as! ScheduleCell
-        if let curStretch = stretchAt(indexPath: indexPath) {
+        if let curStretch = viewModel.stretchAt(indexPath: indexPath) {
             cell.layoutFor(stretch: curStretch)
             cell.delegate = self
         }
         return cell
-    }
-    
-    // MARK: - Helpers
-    
-    private func stretchAt(indexPath: IndexPath) -> ScheduleStretch? {
-        let curDay = viewModel.days[indexPath.section]
-        if let stretches = curDay.stretches {
-            return stretches[indexPath.row]
-        }
-        return nil
-    }
-    
-    private func toggleStretchCompletedAt(indexPath: IndexPath) {
-        guard let curStretch = stretchAt(indexPath: indexPath)  else {
-            return
-        }
-        curStretch.isCompleted = !curStretch.isCompleted
-        viewModel.saveSchedule()
-        scheduleTable.reloadSections(IndexSet(integer: indexPath.section), with: .none)
-        playHaptic()
     }
     
     // MARK: - UITableViewDelegate
@@ -105,7 +95,7 @@ class ScheduleController: BaseViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let curStretch = stretchAt(indexPath: indexPath)  else {
+        guard let curStretch = viewModel.stretchAt(indexPath: indexPath)  else {
             return
         }
         selectedIndexPath = indexPath
@@ -117,7 +107,7 @@ class ScheduleController: BaseViewController, UITableViewDataSource, UITableView
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let completeAction = UIContextualAction(style: .normal, title: nil) { [unowned self] (action, view, completionHandler) in
-            self.toggleStretchCompletedAt(indexPath: indexPath)
+            viewModel.toggleStretchCompletedAt(indexPath: indexPath)
         }
         completeAction.backgroundColor = UIColor.appMain(for: traitCollection)
         completeAction.image = UIImage(systemName: "checkmark")
@@ -132,7 +122,7 @@ class ScheduleController: BaseViewController, UITableViewDataSource, UITableView
         guard let indexPath = scheduleTable.indexPath(for: cell) else {
             return
         }
-        toggleStretchCompletedAt(indexPath: indexPath)
+        viewModel.toggleStretchCompletedAt(indexPath: indexPath)
     }
     
     // MARK: - StretchControllerDelegate
@@ -142,7 +132,7 @@ class ScheduleController: BaseViewController, UITableViewDataSource, UITableView
             return
         }
         
-        toggleStretchCompletedAt(indexPath: indexPath)
+        viewModel.toggleStretchCompletedAt(indexPath: indexPath)
     }
     
     func stretchControllerWillDismiss(controller: StretchController) {

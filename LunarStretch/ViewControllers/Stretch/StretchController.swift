@@ -69,6 +69,7 @@ class StretchController: BaseViewController {
     @IBAction func completeTapped(_ sender: AnyObject) {
         delegate?.stretchCompletionToggled(stretch: stretch, controller: self)
         updateCompleteButton()
+        self.navigationController?.popViewController(animated: true)
     }
     
     // MARK: - Helpers

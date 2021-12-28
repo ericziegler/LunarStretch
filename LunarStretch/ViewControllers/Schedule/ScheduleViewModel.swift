@@ -11,8 +11,10 @@ class ScheduleViewModel {
     
     // MARK: - Properties
     
+    static let checkInId = "88A19775-0997-4348-B4E8-FF9E38591C1D"
     private var stretchesLookup = [String : StretchInfo]()
     var days = [ScheduleDay]()
+    var completedToggled: ((_ indexPath: IndexPath) -> Void)?
     var daysCompleted: Int {
         var count = 0
         for curDay in days {
@@ -100,6 +102,25 @@ class ScheduleViewModel {
     func saveSchedule() {
         let services = ScheduleService()
         services.saveSchedule(schedule: days)
+    }
+    
+    // MARK: - Accessors
+    
+    func stretchAt(indexPath: IndexPath) -> ScheduleStretch? {
+        let curDay = days[indexPath.section]
+        if let stretches = curDay.stretches {
+            return stretches[indexPath.row]
+        }
+        return nil
+    }
+    
+    func toggleStretchCompletedAt(indexPath: IndexPath) {
+        guard let curStretch = stretchAt(indexPath: indexPath)  else {
+            return
+        }
+        curStretch.isCompleted = !curStretch.isCompleted
+        saveSchedule()
+        completedToggled?(indexPath)
     }
     
 }

@@ -11,9 +11,9 @@ class ScheduleStretch: NSObject, Codable, NSCoding {
     
     // MARK: - Constants
     
-    static let idCacheKey = "ScheduleStretchIdCacheKey"
-    static let durationCacheKey = "ScheduleStretchDurationCacheKey"
-    static let isCompletedCacheKey = "ScheduleStretchIsCompletedCacheKey"
+    private static let idCacheKey = "ScheduleStretchIdCacheKey"
+    private static let durationCacheKey = "ScheduleStretchDurationCacheKey"
+    private static let isCompletedCacheKey = "ScheduleStretchIsCompletedCacheKey"
     
     // MARK: - Coding
     
