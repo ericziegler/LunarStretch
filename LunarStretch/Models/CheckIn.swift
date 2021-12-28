@@ -22,12 +22,12 @@ class CheckIn: NSObject, NSCoding {
     // MARK: - Properties
     
     var day: Int?
-    var frontLeft: Int?
-    var frontRight: Int?
-    var sideLeft: Int?
-    var sideRight: Int?
-    var roundhouseLeft: Int?
-    var roundhouseRight: Int?
+    var frontLeft: Double?
+    var frontRight: Double?
+    var sideLeft: Double?
+    var sideRight: Double?
+    var roundhouseLeft: Double?
+    var roundhouseRight: Double?
     
     // MARK: - Init
     
@@ -42,22 +42,22 @@ class CheckIn: NSObject, NSCoding {
             day = cachedDay.intValue
         }
         if let cachedFrontLeft = decoder.decodeObject(forKey: CheckIn.frontLeftCacheKey) as? NSNumber {
-            frontLeft = cachedFrontLeft.intValue
+            frontLeft = cachedFrontLeft.doubleValue
         }
         if let cachedFrontRight = decoder.decodeObject(forKey: CheckIn.frontRightCacheKey) as? NSNumber {
-            frontRight = cachedFrontRight.intValue
+            frontRight = cachedFrontRight.doubleValue
         }
         if let cachedSideLeft = decoder.decodeObject(forKey: CheckIn.sideLeftCacheKey) as? NSNumber {
-            sideLeft = cachedSideLeft.intValue
+            sideLeft = cachedSideLeft.doubleValue
         }
         if let cachedSideRight = decoder.decodeObject(forKey: CheckIn.sideRightCacheKey) as? NSNumber {
-            sideRight = cachedSideRight.intValue
+            sideRight = cachedSideRight.doubleValue
         }
         if let cachedRoundhouseLeft = decoder.decodeObject(forKey: CheckIn.roundhouseLeftCacheKey) as? NSNumber {
-            roundhouseLeft = cachedRoundhouseLeft.intValue
+            roundhouseLeft = cachedRoundhouseLeft.doubleValue
         }
         if let cachedRoundhouseRight = decoder.decodeObject(forKey: CheckIn.roundhouseRightCacheKey) as? NSNumber {
-            roundhouseRight = cachedRoundhouseRight.intValue
+            roundhouseRight = cachedRoundhouseRight.doubleValue
         }
     }
     
@@ -67,21 +67,33 @@ class CheckIn: NSObject, NSCoding {
         }
         if let frontLeft = frontLeft {
             coder.encode(NSNumber(value: frontLeft), forKey: CheckIn.frontLeftCacheKey)
+        } else {
+            coder.encode(nil, forKey: CheckIn.frontLeftCacheKey)
         }
         if let frontRight = frontRight {
             coder.encode(NSNumber(value: frontRight), forKey: CheckIn.frontRightCacheKey)
+        } else {
+            coder.encode(nil, forKey: CheckIn.frontRightCacheKey)
         }
         if let sideLeft = sideLeft {
             coder.encode(NSNumber(value: sideLeft), forKey: CheckIn.sideLeftCacheKey)
+        } else {
+            coder.encode(nil, forKey: CheckIn.sideLeftCacheKey)
         }
         if let sideRight = sideRight {
             coder.encode(NSNumber(value: sideRight), forKey: CheckIn.sideRightCacheKey)
+        } else {
+            coder.encode(nil, forKey: CheckIn.sideRightCacheKey)
         }
         if let roundhouseLeft = roundhouseLeft {
             coder.encode(NSNumber(value: roundhouseLeft), forKey: CheckIn.roundhouseLeftCacheKey)
+        } else {
+            coder.encode(nil, forKey: CheckIn.roundhouseLeftCacheKey)
         }
         if let roundhouseRight = roundhouseRight {
             coder.encode(NSNumber(value: roundhouseRight), forKey: CheckIn.roundhouseRightCacheKey)
+        } else {
+            coder.encode(nil, forKey: CheckIn.roundhouseRightCacheKey)
         }
     }
     

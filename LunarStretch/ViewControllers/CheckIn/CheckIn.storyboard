@@ -16,18 +16,273 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ery-7w-z45">
+                                <rect key="frame" x="0.0" y="44" width="414" height="101"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Front Kick" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXT-8E-o9Z" customClass="MediumLabel" customModule="LunarStretch" customModuleProvider="target">
+                                        <rect key="frame" x="163" y="12" width="88" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" name="AppTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Right" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UOt-Wq-QLa" customClass="AppTextField" customModule="LunarStretch" customModuleProvider="target">
+                                        <rect key="frame" x="255" y="48" width="111" height="32"/>
+                                        <color key="backgroundColor" name="AppBarColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="MNM-qW-aB0"/>
+                                        </constraints>
+                                        <color key="textColor" name="AppTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="AppTextSecondaryColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="JX4-ic-h2J"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Left" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8p3-sh-eYt" customClass="AppTextField" customModule="LunarStretch" customModuleProvider="target">
+                                        <rect key="frame" x="48" y="48" width="111" height="32"/>
+                                        <color key="backgroundColor" name="AppBarColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="LX1-7n-YnZ"/>
+                                        </constraints>
+                                        <color key="textColor" name="AppTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="AppTextSecondaryColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="ouo-Wg-RXF"/>
+                                        </connections>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01s-zu-otx">
+                                        <rect key="frame" x="0.0" y="100" width="414" height="1"/>
+                                        <color key="backgroundColor" name="AppSeparatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Lar-Mg-mjD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="UOt-Wq-QLa" firstAttribute="centerY" secondItem="8p3-sh-eYt" secondAttribute="centerY" id="1hx-uz-BsS"/>
+                                    <constraint firstItem="01s-zu-otx" firstAttribute="top" secondItem="8p3-sh-eYt" secondAttribute="bottom" constant="20" id="2ic-NS-pmD"/>
+                                    <constraint firstItem="8p3-sh-eYt" firstAttribute="top" secondItem="yXT-8E-o9Z" secondAttribute="bottom" constant="12" id="5dL-JZ-SLC"/>
+                                    <constraint firstItem="UOt-Wq-QLa" firstAttribute="centerX" secondItem="ery-7w-z45" secondAttribute="centerX" multiplier="1.5" id="9DZ-lo-hv2"/>
+                                    <constraint firstItem="yXT-8E-o9Z" firstAttribute="top" secondItem="ery-7w-z45" secondAttribute="top" constant="12" id="JyH-w4-SPn"/>
+                                    <constraint firstItem="8p3-sh-eYt" firstAttribute="centerX" secondItem="ery-7w-z45" secondAttribute="centerX" multiplier="0.5" id="KE9-wu-TdH"/>
+                                    <constraint firstAttribute="bottom" secondItem="01s-zu-otx" secondAttribute="bottom" id="Nzc-cD-wzj"/>
+                                    <constraint firstAttribute="trailing" secondItem="01s-zu-otx" secondAttribute="trailing" id="cTR-fB-lLD"/>
+                                    <constraint firstItem="8p3-sh-eYt" firstAttribute="width" secondItem="ery-7w-z45" secondAttribute="width" multiplier="0.268116" id="ctw-RC-lG8"/>
+                                    <constraint firstItem="yXT-8E-o9Z" firstAttribute="centerX" secondItem="ery-7w-z45" secondAttribute="centerX" id="fqW-Vv-NvQ"/>
+                                    <constraint firstItem="01s-zu-otx" firstAttribute="leading" secondItem="ery-7w-z45" secondAttribute="leading" id="te3-gc-seq"/>
+                                    <constraint firstItem="UOt-Wq-QLa" firstAttribute="width" secondItem="ery-7w-z45" secondAttribute="width" multiplier="0.268116" id="zxQ-nM-2iu"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzA-7I-lgD">
+                                <rect key="frame" x="0.0" y="145" width="414" height="101"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Side Kick" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGi-yy-Tvd" customClass="MediumLabel" customModule="LunarStretch" customModuleProvider="target">
+                                        <rect key="frame" x="166.5" y="12" width="81" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" name="AppTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Right" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Asl-ly-e3W" customClass="AppTextField" customModule="LunarStretch" customModuleProvider="target">
+                                        <rect key="frame" x="255" y="48" width="111" height="32"/>
+                                        <color key="backgroundColor" name="AppBarColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="Iv8-FG-bew"/>
+                                        </constraints>
+                                        <color key="textColor" name="AppTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="AppTextSecondaryColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="qt1-by-BM7"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Left" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nxa-7j-sfv" customClass="AppTextField" customModule="LunarStretch" customModuleProvider="target">
+                                        <rect key="frame" x="48" y="48" width="111" height="32"/>
+                                        <color key="backgroundColor" name="AppBarColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="Sov-yc-76J"/>
+                                        </constraints>
+                                        <color key="textColor" name="AppTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="AppTextSecondaryColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="jrX-ce-m8p"/>
+                                        </connections>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfD-ji-kF5">
+                                        <rect key="frame" x="0.0" y="100" width="414" height="1"/>
+                                        <color key="backgroundColor" name="AppSeparatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="aUb-z4-Q8o"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dfD-ji-kF5" firstAttribute="top" secondItem="nxa-7j-sfv" secondAttribute="bottom" constant="20" id="3Up-vZ-g9t"/>
+                                    <constraint firstItem="nxa-7j-sfv" firstAttribute="top" secondItem="gGi-yy-Tvd" secondAttribute="bottom" constant="12" id="6hj-h2-2ik"/>
+                                    <constraint firstItem="gGi-yy-Tvd" firstAttribute="top" secondItem="vzA-7I-lgD" secondAttribute="top" constant="12" id="8hu-fO-Zpp"/>
+                                    <constraint firstAttribute="trailing" secondItem="dfD-ji-kF5" secondAttribute="trailing" id="94A-4R-RXL"/>
+                                    <constraint firstItem="nxa-7j-sfv" firstAttribute="width" secondItem="vzA-7I-lgD" secondAttribute="width" multiplier="0.268116" id="9ys-ec-FGy"/>
+                                    <constraint firstItem="Asl-ly-e3W" firstAttribute="width" secondItem="vzA-7I-lgD" secondAttribute="width" multiplier="0.268116" id="DH9-B9-Dkn"/>
+                                    <constraint firstItem="Asl-ly-e3W" firstAttribute="centerY" secondItem="nxa-7j-sfv" secondAttribute="centerY" id="EA8-r7-gqq"/>
+                                    <constraint firstItem="gGi-yy-Tvd" firstAttribute="centerX" secondItem="vzA-7I-lgD" secondAttribute="centerX" id="KyS-72-XXf"/>
+                                    <constraint firstAttribute="bottom" secondItem="dfD-ji-kF5" secondAttribute="bottom" id="M9z-Oa-YYa"/>
+                                    <constraint firstItem="Asl-ly-e3W" firstAttribute="centerX" secondItem="vzA-7I-lgD" secondAttribute="centerX" multiplier="1.5" id="bTm-gG-gbX"/>
+                                    <constraint firstItem="nxa-7j-sfv" firstAttribute="centerX" secondItem="vzA-7I-lgD" secondAttribute="centerX" multiplier="0.5" id="xqI-zf-UZ7"/>
+                                    <constraint firstItem="dfD-ji-kF5" firstAttribute="leading" secondItem="vzA-7I-lgD" secondAttribute="leading" id="yqS-od-F7H"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EN4-Z8-Ep1">
+                                <rect key="frame" x="0.0" y="246" width="414" height="101"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roundhouse Kick" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCl-bt-byG" customClass="MediumLabel" customModule="LunarStretch" customModuleProvider="target">
+                                        <rect key="frame" x="131" y="12" width="152.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" name="AppTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Right" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zzy-rN-VhC" customClass="AppTextField" customModule="LunarStretch" customModuleProvider="target">
+                                        <rect key="frame" x="255" y="48" width="111" height="32"/>
+                                        <color key="backgroundColor" name="AppBarColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="TJ4-5f-n7a"/>
+                                        </constraints>
+                                        <color key="textColor" name="AppTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="AppTextSecondaryColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="dC6-8l-2jq"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Left" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8fA-S8-3ST" customClass="AppTextField" customModule="LunarStretch" customModuleProvider="target">
+                                        <rect key="frame" x="48" y="48" width="111" height="32"/>
+                                        <color key="backgroundColor" name="AppBarColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="y8E-me-Q7T"/>
+                                        </constraints>
+                                        <color key="textColor" name="AppTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" name="AppTextSecondaryColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="FmP-tt-JxP"/>
+                                        </connections>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vXX-7d-bte">
+                                        <rect key="frame" x="0.0" y="100" width="414" height="1"/>
+                                        <color key="backgroundColor" name="AppSeparatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="8JM-cu-Ryl"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8fA-S8-3ST" firstAttribute="centerX" secondItem="EN4-Z8-Ep1" secondAttribute="centerX" multiplier="0.5" id="04x-mA-O2H"/>
+                                    <constraint firstItem="vXX-7d-bte" firstAttribute="leading" secondItem="EN4-Z8-Ep1" secondAttribute="leading" id="CRb-iR-juX"/>
+                                    <constraint firstItem="8fA-S8-3ST" firstAttribute="top" secondItem="lCl-bt-byG" secondAttribute="bottom" constant="12" id="ET4-R4-0hL"/>
+                                    <constraint firstAttribute="trailing" secondItem="vXX-7d-bte" secondAttribute="trailing" id="FX1-HJ-fAY"/>
+                                    <constraint firstItem="zzy-rN-VhC" firstAttribute="centerX" secondItem="EN4-Z8-Ep1" secondAttribute="centerX" multiplier="1.5" id="X5l-V3-Usu"/>
+                                    <constraint firstItem="lCl-bt-byG" firstAttribute="top" secondItem="EN4-Z8-Ep1" secondAttribute="top" constant="12" id="YKx-Va-sdb"/>
+                                    <constraint firstAttribute="bottom" secondItem="vXX-7d-bte" secondAttribute="bottom" id="gsf-b7-PCF"/>
+                                    <constraint firstItem="zzy-rN-VhC" firstAttribute="width" secondItem="EN4-Z8-Ep1" secondAttribute="width" multiplier="0.268116" id="ia4-3p-pZf"/>
+                                    <constraint firstItem="8fA-S8-3ST" firstAttribute="width" secondItem="EN4-Z8-Ep1" secondAttribute="width" multiplier="0.268116" id="ioF-IY-hXr"/>
+                                    <constraint firstItem="vXX-7d-bte" firstAttribute="top" secondItem="8fA-S8-3ST" secondAttribute="bottom" constant="20" id="nx3-6o-JHc"/>
+                                    <constraint firstItem="zzy-rN-VhC" firstAttribute="centerY" secondItem="8fA-S8-3ST" secondAttribute="centerY" id="ua9-a9-jaY"/>
+                                    <constraint firstItem="lCl-bt-byG" firstAttribute="centerX" secondItem="EN4-Z8-Ep1" secondAttribute="centerX" id="yZi-VF-Dci"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJK-wa-168" customClass="ActionButton" customModule="LunarStretch" customModuleProvider="target">
+                                <rect key="frame" x="85" y="363" width="244" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hJK-wa-168" secondAttribute="height" multiplier="50:9" id="aY0-aO-hIr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="SAVE"/>
+                                <connections>
+                                    <action selector="saveTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6kE-4R-AJC"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="AppBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vzA-7I-lgD" secondAttribute="trailing" id="5rZ-Us-CV8"/>
+                            <constraint firstItem="hJK-wa-168" firstAttribute="width" secondItem="hJK-wa-168" secondAttribute="height" multiplier="50:9" id="Clo-z8-GnX"/>
+                            <constraint firstItem="ery-7w-z45" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ecm-Y7-Vkz"/>
+                            <constraint firstItem="hJK-wa-168" firstAttribute="top" secondItem="EN4-Z8-Ep1" secondAttribute="bottom" constant="16" id="WEj-u9-kQH"/>
+                            <constraint firstItem="ery-7w-z45" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Wn7-te-R3L"/>
+                            <constraint firstItem="hJK-wa-168" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="hee-JQ-sSj"/>
+                            <constraint firstItem="EN4-Z8-Ep1" firstAttribute="top" secondItem="vzA-7I-lgD" secondAttribute="bottom" id="oCU-jf-hID"/>
+                            <constraint firstItem="EN4-Z8-Ep1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="sSA-0w-3Nd"/>
+                            <constraint firstAttribute="trailing" secondItem="EN4-Z8-Ep1" secondAttribute="trailing" id="vbQ-cz-1ju"/>
+                            <constraint firstItem="vzA-7I-lgD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="veU-FG-82o"/>
+                            <constraint firstItem="vzA-7I-lgD" firstAttribute="top" secondItem="ery-7w-z45" secondAttribute="bottom" id="x2j-mv-766"/>
+                            <constraint firstItem="ery-7w-z45" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="ylj-Pc-QrT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="leftFrontField" destination="8p3-sh-eYt" id="ntB-3R-4xx"/>
+                        <outlet property="leftRoundhouseField" destination="8fA-S8-3ST" id="ycD-uL-Ayy"/>
+                        <outlet property="leftSideField" destination="nxa-7j-sfv" id="dQa-wh-GHa"/>
+                        <outlet property="rightFrontField" destination="UOt-Wq-QLa" id="fmu-2T-SE6"/>
+                        <outlet property="rightRoundhouseField" destination="zzy-rN-VhC" id="Uou-TE-E2x"/>
+                        <outlet property="rightSideField" destination="Asl-ly-e3W" id="y5F-1R-rDI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="127"/>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
     </scenes>
     <resources>
         <namedColor name="AppBackgroundColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppBarColor">
+            <color red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppSeparatorColor">
+            <color red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppTextColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppTextSecondaryColor">
+            <color red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

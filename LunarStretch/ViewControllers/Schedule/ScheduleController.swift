@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ScheduleController: BaseViewController, UITableViewDataSource, UITableViewDelegate, ScheduleCellDelegate, StretchControllerDelegate {
+class ScheduleController: BaseViewController, UITableViewDataSource, UITableViewDelegate, ScheduleCellDelegate, StretchControllerDelegate, CheckInControllerDelegate {
  
     // MARK: - Properties
     
@@ -95,14 +95,22 @@ class ScheduleController: BaseViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let curStretch = viewModel.stretchAt(indexPath: indexPath)  else {
+        guard let curStretch = viewModel.stretchAt(indexPath: indexPath), let stretchId = curStretch.id else {
             return
         }
+        
         selectedIndexPath = indexPath
         
-        let controller = StretchController.createControllerFor(stretch: curStretch)
-        controller.delegate = self
-        self.navigationController?.pushViewController(controller, animated: true)
+        if stretchId == ScheduleViewModel.checkInId {
+            let day = viewModel.days[indexPath.section].day ?? 0
+            let controller = CheckInController.createControllerFor(stretch: curStretch, day: day)
+            controller.delegate = self
+            self.navigationController?.pushViewController(controller, animated: true)
+        } else {
+            let controller = StretchController.createControllerFor(stretch: curStretch)
+            controller.delegate = self
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
@@ -136,6 +144,16 @@ class ScheduleController: BaseViewController, UITableViewDataSource, UITableView
     }
     
     func stretchControllerWillDismiss(controller: StretchController) {
+        selectedIndexPath = nil
+    }
+    
+    // MARK: - CheckInControllerDelegate
+    
+    func checkInSavedFor(stretch: ScheduleStretch, controller: CheckInController) {
+        viewModel.saveSchedule()
+    }
+    
+    func checkInControllerWillDismiss(controller: CheckInController) {
         selectedIndexPath = nil
     }
     

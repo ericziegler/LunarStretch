@@ -13,6 +13,7 @@ class ScheduleStretch: NSObject, Codable, NSCoding {
     
     private static let idCacheKey = "ScheduleStretchIdCacheKey"
     private static let durationCacheKey = "ScheduleStretchDurationCacheKey"
+    private static let checkInCacheKey = "ScheduleStretchCheckInCacheKey"
     private static let isCompletedCacheKey = "ScheduleStretchIsCompletedCacheKey"
     
     // MARK: - Coding
@@ -26,6 +27,7 @@ class ScheduleStretch: NSObject, Codable, NSCoding {
     
     var id: String?
     var duration: String?
+    var checkIn: CheckIn?
     var isCompleted: Bool = false
     var stretchInfo: StretchInfo?
     
@@ -44,6 +46,9 @@ class ScheduleStretch: NSObject, Codable, NSCoding {
         if let cachedDuration = decoder.decodeObject(forKey: ScheduleStretch.durationCacheKey) as? String {
             duration = cachedDuration
         }
+        if let checkInData = decoder.decodeObject(forKey: ScheduleStretch.checkInCacheKey) as? Data, let cachedCheckIn = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(checkInData) as? CheckIn {
+            checkIn = cachedCheckIn
+        }
         if let cachedIsCompleted = decoder.decodeObject(forKey: ScheduleStretch.isCompletedCacheKey) as? NSNumber {
             isCompleted = cachedIsCompleted.boolValue
         }
@@ -52,6 +57,10 @@ class ScheduleStretch: NSObject, Codable, NSCoding {
     func encode(with coder: NSCoder) {
         coder.encode(id, forKey: ScheduleStretch.idCacheKey)
         coder.encode(duration, forKey: ScheduleStretch.durationCacheKey)
+        if let checkIn = checkIn {
+            let checkInData = try? NSKeyedArchiver.archivedData(withRootObject: checkIn, requiringSecureCoding: false)
+            coder.encode(checkInData, forKey: ScheduleStretch.checkInCacheKey)
+        }
         coder.encode(NSNumber(value: isCompleted), forKey: ScheduleStretch.isCompletedCacheKey)
     }
     
