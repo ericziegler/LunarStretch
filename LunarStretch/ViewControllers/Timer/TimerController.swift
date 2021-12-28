@@ -32,7 +32,7 @@ class TimerController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = TimerViewModel(prepTime: 10, startTime: startingTime, step: 1, prepTimeUpdated: { [unowned self] time, formattedTime in
+        viewModel = TimerViewModel(prepTime: 5, startTime: startingTime, step: 1, prepTimeUpdated: { [unowned self] time, formattedTime in
             if time <= 1 {
                 AlarmManager.shared.playBeginTimer()
             } else {
