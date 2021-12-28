@@ -1,8 +1,11 @@
 [
     {
         "day": 1,
-        "name": "new moon pt. 1",
         "stretches": [
+            {
+                "id": "88A19775-0997-4348-B4E8-FF9E38591C1D",
+                "duration": "measure your kicks!"
+            },
             {
                 "id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
                 "duration": "20 sec"
@@ -39,7 +42,6 @@
     },
     {
         "day": 2,
-        "name": "new moon pt. 2",
         "stretches": [
             {
                 "id": "7CF935E0-6504-4F44-A520-2B8A86C25BE6",
@@ -77,7 +79,6 @@
     },
     {
         "day": 3,
-        "name": "new moon pt. 3",
         "stretches": [
             {
                 "id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
@@ -115,17 +116,15 @@
     },
     {
         "day": 4,
-        "name": "waxing crescent",
         "stretches": [
             {
                 "id": "88A19775-0997-4348-B4E8-FF9E38591C1D",
-                "duration": "take it easy!"
+                "duration": "measure your kicks!"
             }
         ]
     },
     {
         "day": 5,
-        "name": "waxing crescent pt. 1",
         "stretches": [
             {
                 "id": "50382D1D-9F5A-4F75-8D02-7783F38E1A40",
@@ -163,7 +162,6 @@
     },
     {
         "day": 6,
-        "name": "waxing crescent pt. 2",
         "stretches": [
             {
                 "id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
@@ -201,7 +199,6 @@
     },
     {
         "day": 7,
-        "name": "waxing crescent pt. 3",
         "stretches": [
             {
                 "id": "AF9FA161-26C5-46CA-956F-1D26CFBB21AB",
@@ -239,17 +236,15 @@
     },
     {
         "day": 8,
-        "name": "first quarter",
         "stretches": [
             {
                 "id": "88A19775-0997-4348-B4E8-FF9E38591C1D",
-                "duration": "take it easy!"
+                "duration": "measure your kicks!"
             }
         ]
     },
     {
         "day": 9,
-        "name": "first quarter pt. 1",
         "stretches": [
             {
                 "id": "1094E43B-95A7-4A87-AE32-550A936A7478",
@@ -279,7 +274,6 @@
     },
     {
         "day": 10,
-        "name": "first quarter pt. 2",
         "stretches": [
             {
                 "id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
@@ -317,7 +311,6 @@
     },
     {
         "day": 11,
-        "name": "first quarter pt. 3",
         "stretches": [
             {
                 "id": "50382D1D-9F5A-4F75-8D02-7783F38E1A40",
@@ -351,17 +344,15 @@
     },
     {
         "day": 12,
-        "name": "waxing gibbous",
         "stretches": [
             {
                 "id": "88A19775-0997-4348-B4E8-FF9E38591C1D",
-                "duration": "take it easy!"
+                "duration": "measure your kicks!"
             }
         ]
     },
     {
         "day": 13,
-        "name": "waxing gibbous pt. 1",
         "stretches": [
             {
                 "id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
@@ -399,7 +390,6 @@
     },
     {
         "day": 14,
-        "name": "waxing gibbous pt. 2",
         "stretches": [
             {
                 "id": "B4E2901B-5A48-4592-BED7-5407968D8DE8",
@@ -437,7 +427,6 @@
     },
     {
         "day": 15,
-        "name": "waxing gibbous pt. 3",
         "stretches": [
             {
                 "id": "2E276DC6-E5FD-49B0-849B-CA6E652F1809",
@@ -475,17 +464,15 @@
     },
     {
         "day": 16,
-        "name": "full moon",
         "stretches": [
             {
                 "id": "88A19775-0997-4348-B4E8-FF9E38591C1D",
-                "duration": "take it easy!"
+                "duration": "measure your kicks!"
             }
         ]
     },
     {
         "day": 17,
-        "name": "full moon pt. 1",
         "stretches": [
             {
                 "id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
@@ -523,7 +510,6 @@
     },
     {
         "day": 18,
-        "name": "full moon pt. 2",
         "stretches": [
             {
                 "id": "F63E5CCC-5054-4883-9C1A-B244BB949875",
@@ -569,7 +555,6 @@
     },
     {
         "day": 19,
-        "name": "full moon pt. 3",
         "stretches": [
             {
                 "id": "1094E43B-95A7-4A87-AE32-550A936A7478",
@@ -599,17 +584,15 @@
     },
     {
         "day": 20,
-        "name": "waning gibbous",
         "stretches": [
             {
                 "id": "88A19775-0997-4348-B4E8-FF9E38591C1D",
-                "duration": "take it easy!"
+                "duration": "measure your kicks!"
             }
         ]
     },
     {
         "day": 21,
-        "name": "waning gibbous pt. 1",
         "stretches": [
             {
                 "id": "1A0DC942-D1A8-49C5-8AF1-70F0BB404EA5",
@@ -651,7 +634,6 @@
     },
     {
         "day": 22,
-        "name": "waning gibbous pt. 2",
         "stretches": [
             {
                 "id": "1A0DC942-D1A8-49C5-8AF1-70F0BB404EA5",
@@ -689,7 +671,6 @@
     },
     {
         "day": 23,
-        "name": "waning gibbous pt. 3",
         "stretches": [
             {
                 "id": "",
@@ -735,17 +716,15 @@
     },
     {
         "day": 24,
-        "name": "third quarter",
         "stretches": [
             {
                 "id": "88A19775-0997-4348-B4E8-FF9E38591C1D",
-                "duration": "take it easy!"
+                "duration": "measure your kicks!"
             }
         ]
     },
     {
         "day": 25,
-        "name": "third quarter pt. 1",
         "stretches": [
             {
                 "id": "1094E43B-95A7-4A87-AE32-550A936A7478",
@@ -775,7 +754,6 @@
     },
     {
         "day": 26,
-        "name": "third quarter pt. 2",
         "stretches": [
             {
                 "id": "B4E2901B-5A48-4592-BED7-5407968D8DE8",
@@ -817,7 +795,6 @@
     },
     {
         "day": 27,
-        "name": "third quarter pt. 3",
         "stretches": [
             {
                 "id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
@@ -859,17 +836,15 @@
     },
     {
         "day": 28,
-        "name": "waning crescent",
         "stretches": [
             {
                 "id": "88A19775-0997-4348-B4E8-FF9E38591C1D",
-                "duration": "Take it easy!"
+                "duration": "measure your kicks!"
             }
         ]
     },
     {
         "day": 29,
-        "name": "waning crescent pt. 1",
         "stretches": [
             {
                 "id": "1094E43B-95A7-4A87-AE32-550A936A7478",
@@ -907,7 +882,6 @@
     },
     {
         "day": 30,
-        "name": "waning crescent pt. 1",
         "stretches": [
             {
                 "id": "27573A1A-F099-4EBE-B5CA-6B3AA1EDB30A",
@@ -940,6 +914,10 @@
             {
                 "id": "C7558169-D91B-4C8E-B056-1BC95E914083",
                 "duration": "30 sec"
+            },
+            {
+                "id": "88A19775-0997-4348-B4E8-FF9E38591C1D",
+                "duration": "measure your kicks!"
             }
         ]
     }

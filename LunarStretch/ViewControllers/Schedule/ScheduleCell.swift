@@ -29,7 +29,7 @@ class ScheduleCell: UITableViewCell {
     
     func layoutFor(stretch: ScheduleStretch) {
         if let name = stretch.stretchInfo?.name {
-            if name.contains("rest day") {
+            if name.contains("check in") {
                 stretchLabel.text = name.uppercased()
             } else {
                 stretchLabel.text = name.capitalized
